@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:17.0.1"],
             ["react-scripts", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.0.1"],
-            ["web-vitals", "npm:0.2.4"]
+            ["web-vitals", "npm:1.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -15961,7 +15961,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:17.0.1"],
             ["react-scripts", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.0.1"],
-            ["web-vitals", "npm:0.2.4"]
+            ["web-vitals", "npm:1.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -19015,10 +19015,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["web-vitals", [
-        ["npm:0.2.4", {
-          "packageLocation": "./.yarn/cache/web-vitals-npm-0.2.4-c7d1bfe073-f7565075a9.zip/node_modules/web-vitals/",
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/web-vitals-npm-1.0.1-8d7987ead1-2c6de484c2.zip/node_modules/web-vitals/",
           "packageDependencies": [
-            ["web-vitals", "npm:0.2.4"]
+            ["web-vitals", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]

@@ -2166,7 +2166,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.11.4":
+"@testing-library/jest-dom@npm:^5.11.6":
   version: 5.11.6
   resolution: "@testing-library/jest-dom@npm:5.11.6"
   dependencies:
@@ -2182,7 +2182,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^11.1.0":
+"@testing-library/react@npm:^11.2.2":
   version: 11.2.2
   resolution: "@testing-library/react@npm:11.2.2"
   dependencies:
@@ -2195,7 +2195,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.1.10":
+"@testing-library/user-event@npm:^12.6.0":
   version: 12.6.0
   resolution: "@testing-library/user-event@npm:12.6.0"
   dependencies:
@@ -11884,15 +11884,15 @@ fsevents@~2.1.2:
   resolution: "react-around-auth@workspace:."
   dependencies:
     "@testing-library/dom": ^7.29.0
-    "@testing-library/jest-dom": ^5.11.4
-    "@testing-library/react": ^11.1.0
-    "@testing-library/user-event": ^12.1.10
+    "@testing-library/jest-dom": ^5.11.6
+    "@testing-library/react": ^11.2.2
+    "@testing-library/user-event": ^12.6.0
     eslint: ^7.15.0
     prettier: ^2.2.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-scripts: 4.0.1
-    web-vitals: ^0.2.4
+    web-vitals: ^1.0.1
   languageName: unknown
   linkType: soft
 
@@ -14586,10 +14586,10 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^0.2.4":
-  version: 0.2.4
-  resolution: "web-vitals@npm:0.2.4"
-  checksum: f7565075a9a57428656d848ba48fd85dfebe6af1a82c77f947b5112838b6e14d0d76768f438e6b25cef3fb57f8d5b3595b0bbc20e2c9bdf9761fd0a2c138ca61
+"web-vitals@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "web-vitals@npm:1.0.1"
+  checksum: 2c6de484c233b45f267b75ae81daab614e61ea1d8ece57c4bde373d71be919993248f4d203d9f49618971c48857ba4988e7a37cc5337708c6329e5651fc2aaa8
   languageName: node
   linkType: hard
 
