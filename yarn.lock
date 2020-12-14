@@ -2132,7 +2132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1":
+"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.29.0":
   version: 7.29.0
   resolution: "@testing-library/dom@npm:7.29.0"
   dependencies:
@@ -11772,6 +11772,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "react-around-auth@workspace:."
   dependencies:
+    "@testing-library/dom": ^7.29.0
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
