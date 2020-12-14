@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:7.21.5"],
             ["eslint-plugin-react-hooks", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.2.0"],
             ["eslint-plugin-testing-library", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:3.10.1"],
+            ["normalize.css", "npm:8.0.1"],
             ["prettier", "npm:2.2.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:17.0.1"],
@@ -14677,6 +14678,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["normalize.css", [
+        ["npm:8.0.1", {
+          "packageLocation": "./.yarn/cache/normalize.css-npm-8.0.1-6124fb39b6-de6c137a14.zip/node_modules/normalize.css/",
+          "packageDependencies": [
+            ["normalize.css", "npm:8.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["npm-run-path", [
         ["npm:2.0.2", {
           "packageLocation": "./.yarn/cache/npm-run-path-npm-2.0.2-96c8b48857-0a1bc9a1e0.zip/node_modules/npm-run-path/",
@@ -16911,6 +16921,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:7.21.5"],
             ["eslint-plugin-react-hooks", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.2.0"],
             ["eslint-plugin-testing-library", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:3.10.1"],
+            ["normalize.css", "npm:8.0.1"],
             ["prettier", "npm:2.2.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:17.0.1"],

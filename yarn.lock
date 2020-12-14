@@ -10530,6 +10530,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"normalize.css@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "normalize.css@npm:8.0.1"
+  checksum: de6c137a14291c00fee60a1e9e9ab4b78f93d48dd7ab5baa2783dd62bf19b456403bf0585ad201bb84ed184348fd49b467ccfc707068bf342123d00d31801e98
+  languageName: node
+  linkType: hard
+
 "npm-run-path@npm:^2.0.0":
   version: 2.0.2
   resolution: "npm-run-path@npm:2.0.2"
@@ -12499,6 +12506,7 @@ fsevents@~2.1.2:
     eslint-plugin-react: ^7.21.5
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-testing-library: ^3.10.1
+    normalize.css: ^8.0.1
     prettier: ^2.2.1
     react: ^17.0.1
     react-dom: ^17.0.1
