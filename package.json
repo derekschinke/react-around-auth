@@ -2,6 +2,7 @@
   "name": "react-around-auth",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://derekschinke-practicum.github.io/react-around-auth/",
   "dependencies": {
     "@testing-library/dom": "^7.29.0",
     "@testing-library/jest-dom": "^5.11.6",
