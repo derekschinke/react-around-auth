@@ -1,0 +1,11 @@
+@import url(./__list/places__list.css);
+
+.places {
+  padding-top: 51px;
+}
+
+@media screen and (max-width: 919px) {
+  .places {
+    padding-top: 36px;
+  }
+}

@@ -28,6 +28,7 @@
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-refresh": "^0.9.0",
     "react-scripts": "4.0.1",
     "source-map-explorer": "^2.5.1",
     "web-vitals": "^1.0.1"
@@ -53,6 +54,14 @@
       "prettier"
     ],
     "rules": {
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
+      ],
       "prettier/prettier": [
         "error"
       ]
