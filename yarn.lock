@@ -3281,6 +3281,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"astral-regex@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "astral-regex@npm:2.0.0"
+  checksum: bf049ee7048b70af5473580020f98faf09159af31a7fa5e223099966dc90e9e87760bd34030e19a6dcac05b45614b428f559bd71f027344d123555e524cb95ac
+  languageName: node
+  linkType: hard
+
 "async-each@npm:^1.0.1":
   version: 1.0.3
   resolution: "async-each@npm:1.0.3"
@@ -5947,14 +5954,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "eslint-config-prettier@npm:7.0.0"
+"eslint-config-prettier@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "eslint-config-prettier@npm:7.1.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: b7c543080e32829dba5f3db970c5f3c3b47f1de8df89b4226105afbecae561e026b6fe9f2cb16bf08ab1a6f1f544d9303c9c8c0919cbb51a9d2c8a640779624a
+  checksum: 968a1166c3c14ac769b5bd30192dfc81f02319e565a907f1299ae1322eccf836ebaab5a7ebdb5ceefc35b65f5c9d781e5bb92a72bf299d2dde4353b5a828a0f3
   languageName: node
   linkType: hard
 
@@ -6233,9 +6240,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.15.0":
-  version: 7.15.0
-  resolution: "eslint@npm:7.15.0"
+"eslint@npm:^7.16.0":
+  version: 7.16.0
+  resolution: "eslint@npm:7.16.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
     "@eslint/eslintrc": ^0.2.2
@@ -6271,12 +6278,12 @@ __metadata:
     semver: ^7.2.1
     strip-ansi: ^6.0.0
     strip-json-comments: ^3.1.0
-    table: ^5.2.3
+    table: ^6.0.4
     text-table: ^0.2.0
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: e5b2d18d9869f7460858b4462ab45f65f5b43a7a3d94ffdbfdcaab4bcfd3d12af21cca70fde939b994f7cd6e5a71ef229a891f66916968521d9266ef50c996ef
+  checksum: facdebbce95f7812b026cae955f22863e0850584c8b4ab6daefa555f48b38a8b3d62c1857c0eeebe52218c49345853f516209b300c6747ea89d6f88ef495a56d
   languageName: node
   linkType: hard
 
@@ -12115,9 +12122,9 @@ fsevents@~2.1.2:
     "@testing-library/react": ^11.2.2
     "@testing-library/user-event": ^12.6.0
     editorconfig: ^0.15.3
-    eslint: ^7.15.0
+    eslint: ^7.16.0
     eslint-config-airbnb-base: ^14.2.1
-    eslint-config-prettier: ^7.0.0
+    eslint-config-prettier: ^7.1.0
     eslint-config-react-app: ^6.0.0
     eslint-import-resolver-node: ^0.3.4
     eslint-plugin-flowtype: ^5.2.0
@@ -13330,6 +13337,17 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"slice-ansi@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "slice-ansi@npm:4.0.0"
+  dependencies:
+    ansi-styles: ^4.0.0
+    astral-regex: ^2.0.0
+    is-fullwidth-code-point: ^3.0.0
+  checksum: f411aa051802605c3dc8523edee42d39ef59d7c36e6bef6bf1e61d9d2a83894187f6af56911a43ec8e58b921996722d75b354a4c3050b924426ffd1b05da33f9
+  languageName: node
+  linkType: hard
+
 "snapdragon-node@npm:^2.0.1":
   version: 2.1.1
   resolution: "snapdragon-node@npm:2.1.1"
@@ -14044,6 +14062,18 @@ resolve@1.18.1:
     slice-ansi: ^2.1.0
     string-width: ^3.0.0
   checksum: 38877a196c0a57b955e4965fa3ff1cede38649b6e1f6286aa5435579dfd01663fdf8d19c87510e67a79474d75ae0144a0819f2054d654c45d7f525270aafe56b
+  languageName: node
+  linkType: hard
+
+"table@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "table@npm:6.0.4"
+  dependencies:
+    ajv: ^6.12.4
+    lodash: ^4.17.20
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.0
+  checksum: b51d4ad0f3f8a30a7d7f7efa19c07e4acba0a6dd62bb3484da6e45be93a5ac522626f455c0a68c76f02c21a10f7f284d1445925427dca869e0d42d01d48bf6ed
   languageName: node
   linkType: hard
 
