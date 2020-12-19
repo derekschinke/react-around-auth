@@ -19,7 +19,7 @@ function PopupWithForm(props) {
           method="POST"
           name={`popup_type_${props.name}`}
           className={`popup__form popup__form_type_${props.name}`}
-          noValidate={props.shouldNotValidate ? true : false}
+          noValidate={!!props.shouldNotValidate}
           onSubmit={props.onSubmit}
         >
           {props.children}
