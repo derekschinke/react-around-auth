@@ -1,4 +1,4 @@
-function Header() {
+function Header(props) {
   return (
     <header className="header">
       <div
@@ -6,6 +6,7 @@ function Header() {
         aria-label="Around The U.S."
         className="header__logo"
       ></div>
+      {props.children}
     </header>
   );
 }

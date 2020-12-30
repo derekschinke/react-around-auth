@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
-import Footer from './Footer';
 import Header from './Header';
+// import Register from './Register';
 import Main from './Main';
+import Footer from './Footer';
 import PopupWithImage from './PopupWithImage';
 import EditProfilePopup from './EditProfilePopup';
 import EditAvatarPopup from './EditAvatarPopup';
@@ -127,51 +129,62 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <div className="page">
-        <div className="page__container">
-          <Header />
-          <Main
-            cards={cards}
-            onEditAvatar={handleEditAvatarClick}
-            onEditProfile={handleEditProfileClick}
-            onAddCard={handleAddPlaceClick}
-            onCardClick={(card) => {
-              handleCardClick(card);
-            }}
-            onCardLike={(card) => {
-              handleCardLike(card);
-            }}
-            onCardDelete={(card) => {
-              handleCardDelete(card);
-            }}
-          />
-          <Footer />
+      <Router>
+        <div className="page">
+          <div className="page__container">
+            <Switch>
+              <Route path="/">
+                <Header>
+                  <div className="header__logged-in">
+                    <p className="header__user-email">email@mail.com</p>
+                    <p className="header__log-out button">Log out</p>
+                  </div>
+                </Header>
+                <Main
+                  cards={cards}
+                  onEditAvatar={handleEditAvatarClick}
+                  onEditProfile={handleEditProfileClick}
+                  onAddCard={handleAddPlaceClick}
+                  onCardClick={(card) => {
+                    handleCardClick(card);
+                  }}
+                  onCardLike={(card) => {
+                    handleCardLike(card);
+                  }}
+                  onCardDelete={(card) => {
+                    handleCardDelete(card);
+                  }}
+                />
+                <Footer />
 
-          <EditProfilePopup
-            isOpen={isEditProfilePopupOpen}
-            onClose={closeAllPopups}
-            onUpdateUser={handleUpdateUser}
-          />
+                <EditProfilePopup
+                  isOpen={isEditProfilePopupOpen}
+                  onClose={closeAllPopups}
+                  onUpdateUser={handleUpdateUser}
+                />
 
-          <EditAvatarPopup
-            isOpen={isEditAvatarPopupOpen}
-            onClose={closeAllPopups}
-            onUpdateAvatar={handleUpdateAvatar}
-          />
+                <EditAvatarPopup
+                  isOpen={isEditAvatarPopupOpen}
+                  onClose={closeAllPopups}
+                  onUpdateAvatar={handleUpdateAvatar}
+                />
 
-          <AddCardPopup
-            isOpen={isAddCardPopupOpen}
-            onClose={closeAllPopups}
-            onAddCard={handleAddCard}
-          />
+                <AddCardPopup
+                  isOpen={isAddCardPopupOpen}
+                  onClose={closeAllPopups}
+                  onAddCard={handleAddCard}
+                />
 
-          <PopupWithImage
-            card={selectedCard}
-            isOpen={isImagePopupOpen}
-            onClose={closeAllPopups}
-          />
+                <PopupWithImage
+                  card={selectedCard}
+                  isOpen={isImagePopupOpen}
+                  onClose={closeAllPopups}
+                />
+              </Route>
+            </Switch>
+          </div>
         </div>
-      </div>
+      </Router>
     </CurrentUserContext.Provider>
   );
 }

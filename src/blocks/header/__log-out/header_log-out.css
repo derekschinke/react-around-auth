@@ -1,0 +1,14 @@
+.header__log-out {
+  padding: 0;
+  padding-top: 11px;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #a9a9a9;
+}
+
+.header__log-out:hover {
+  opacity: 0.6;
+}

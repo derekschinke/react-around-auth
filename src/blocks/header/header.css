@@ -1,10 +1,15 @@
 @import url(./__logo/header__logo.css);
+@import url(./__logged-in/header__logged-in.css);
+@import url(./__user-email/header__user-email.css);
+@import url(./__log-out/header_log-out.css);
 
 .header {
   padding-top: 45px;
   margin: 0 auto;
   height: 74px;
   border-bottom: 1px solid #545454;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 919px) {
