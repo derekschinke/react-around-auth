@@ -2166,9 +2166,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.29.2":
-  version: 7.29.2
-  resolution: "@testing-library/dom@npm:7.29.2"
+"@testing-library/dom@npm:^7.29.4":
+  version: 7.29.4
+  resolution: "@testing-library/dom@npm:7.29.4"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
@@ -2178,13 +2178,13 @@ __metadata:
     dom-accessibility-api: ^0.5.4
     lz-string: ^1.4.4
     pretty-format: ^26.6.2
-  checksum: f970cf61b59d83d0ae97292a71478bb5a1c447a9ff47d523da6f93457931c7350f7b4eed4e79825c0f06e94bbde78a533c64fae911eb192f97856a02d82cc2ca
+  checksum: a5e59bc7b37f10f02b9d330d153e4ca2866b9ebf23c55b1f158460d6632dc5bdad45496da43529b747a27e8372011008b51d9276557cefaf24dace2ef9c20b79
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.11.8":
-  version: 5.11.8
-  resolution: "@testing-library/jest-dom@npm:5.11.8"
+"@testing-library/jest-dom@npm:^5.11.9":
+  version: 5.11.9
+  resolution: "@testing-library/jest-dom@npm:5.11.9"
   dependencies:
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
@@ -2194,7 +2194,7 @@ __metadata:
     css.escape: ^1.5.1
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: 4b44e8f2c8cdb7bd47c14d1f2013d1b87227a23d8ecedece388d63d548e92b100e8ac63dc52818f0b342d41a86c916fb56c6da80b505ef3ff328b2da7e56fd9a
+  checksum: c285c044edf42b9c4daffbeddd5489564af1c9d625f0ef3781e2e9864688239ccc2521badec9147fea66685c60b736c922e35ea69011aa577eabc156c0e1f5b6
   languageName: node
   linkType: hard
 
@@ -12520,8 +12520,8 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "react-around-auth@workspace:."
   dependencies:
-    "@testing-library/dom": ^7.29.2
-    "@testing-library/jest-dom": ^5.11.8
+    "@testing-library/dom": ^7.29.4
+    "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.3
     "@testing-library/user-event": ^12.6.0
     "@typescript-eslint/eslint-plugin": ^4.13.0
@@ -12552,7 +12552,7 @@ fsevents@~2.1.2:
     react-router-dom: ^5.2.0
     react-scripts: 4.0.1
     source-map-explorer: ^2.5.2
-    web-vitals: ^1.0.1
+    web-vitals: ^1.1.0
   languageName: unknown
   linkType: soft
 
@@ -15464,10 +15464,10 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "web-vitals@npm:1.0.1"
-  checksum: 2c6de484c233b45f267b75ae81daab614e61ea1d8ece57c4bde373d71be919993248f4d203d9f49618971c48857ba4988e7a37cc5337708c6329e5651fc2aaa8
+"web-vitals@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "web-vitals@npm:1.1.0"
+  checksum: b75f7929f0b0bbd055c67eab95024c16038dcc808873dd7406225318c79491f011d9c2cf7c8cf68109c21fb0e9fa292eee3977b9ac780626d17ad25b36cd2ffe
   languageName: node
   linkType: hard
 

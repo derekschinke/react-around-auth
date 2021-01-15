@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://derekschinke-practicum.github.io/react-around-auth/",
   "dependencies": {
-    "@testing-library/dom": "^7.29.2",
-    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/dom": "^7.29.4",
+    "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
@@ -36,7 +36,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "source-map-explorer": "^2.5.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.1.0"
   },
   "husky": {
     "hooks": {
