@@ -1,6 +1,11 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import Header from './Header';
@@ -13,6 +18,8 @@ import EditAvatarPopup from './EditAvatarPopup';
 import AddCardPopup from './AddCardPopup';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   const [currentUser, setCurrentUser] = useState({});
 
   const [cards, setCards] = useState([]);
@@ -33,6 +40,12 @@ function App() {
   function handleAddPlaceClick() {
     setIsAddCardPopupOpen(true);
   }
+
+  function handleLogin() {
+    setLoggedIn(true);
+  }
+
+  console.log(handleLogin);
 
   function handleCardClick(card) {
     setSelectedCard({ link: card.link, name: card.name });
@@ -133,7 +146,7 @@ function App() {
         <div className="page">
           <div className="page__container">
             <Switch>
-              <Route path="/">
+              <Route exact path="/around">
                 <Header>
                   <div className="header__logged-in">
                     <p className="header__user-email">email@mail.com</p>
@@ -181,6 +194,20 @@ function App() {
                   onClose={closeAllPopups}
                 />
               </Route>
+              <Route exact path="/signup">
+                <Header></Header>
+              </Route>
+              <Route exact path="/signin">
+                <Header></Header>
+              </Route>
+              <Route exact path="/">
+                {loggedIn ? (
+                  <Redirect to="around" />
+                ) : (
+                  <Redirect to="/signin" />
+                )}
+              </Route>
+              <Redirect from="*" to="/" />
             </Switch>
           </div>
         </div>
