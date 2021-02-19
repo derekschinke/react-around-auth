@@ -1,0 +1,11 @@
+.header__sign-up {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.header__sign-up:hover {
+  opacity: 0.6;
+}

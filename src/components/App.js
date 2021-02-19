@@ -195,10 +195,14 @@ function App() {
                 />
               </Route>
               <Route exact path="/signup">
-                <Header></Header>
+                <Header>
+                  <p class="header__link button">Log in</p>
+                </Header>
               </Route>
               <Route exact path="/signin">
-                <Header></Header>
+                <Header>
+                  <p class="header__link button">Sign up</p>
+                </Header>
               </Route>
               <Route exact path="/">
                 {loggedIn ? (
