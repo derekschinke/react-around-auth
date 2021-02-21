@@ -1,5 +1,11 @@
-// function Register() {
-//   return <main></main>;
-// }
+import { Link } from 'react-router-dom';
 
-// export default Register;
+function Register() {
+  return (
+    <main>
+      <Link to="/signin">Already a member? Log in here!</Link>
+    </main>
+  );
+}
+
+export default Register;

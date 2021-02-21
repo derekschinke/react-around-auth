@@ -9,7 +9,8 @@ import {
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import Header from './Header';
-// import Register from './Register';
+import Login from './Login';
+import Register from './Register';
 import Main from './Main';
 import Footer from './Footer';
 import PopupWithImage from './PopupWithImage';
@@ -153,6 +154,7 @@ function App() {
                     <p className="header__log-out button">Log out</p>
                   </div>
                 </Header>
+
                 <Main
                   cards={cards}
                   onEditAvatar={handleEditAvatarClick}
@@ -194,16 +196,23 @@ function App() {
                   onClose={closeAllPopups}
                 />
               </Route>
+
               <Route exact path="/signup">
                 <Header>
                   <p class="header__link button">Log in</p>
                 </Header>
+
+                <Register></Register>
               </Route>
+
               <Route exact path="/signin">
                 <Header>
                   <p class="header__link button">Sign up</p>
                 </Header>
+
+                <Login></Login>
               </Route>
+
               <Route exact path="/">
                 {loggedIn ? (
                   <Redirect to="around" />
@@ -211,6 +220,7 @@ function App() {
                   <Redirect to="/signin" />
                 )}
               </Route>
+
               <Redirect from="*" to="/" />
             </Switch>
           </div>
