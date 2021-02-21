@@ -59,10 +59,7 @@
       "react-app",
       "react-app/jest",
       "airbnb-base",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
+      "plugin:prettier/recommended"
     ],
     "rules": {
       "no-underscore-dangle": [
@@ -72,9 +69,6 @@
             "_id"
           ]
         }
-      ],
-      "prettier/prettier": [
-        "error"
       ]
     }
   },
