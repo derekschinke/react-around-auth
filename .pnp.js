@@ -5286,6 +5286,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:7.12.18", {
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.12.18-2f9028bd91-cb9e0c51b8.zip/node_modules/@babel/runtime/",
+          "packageDependencies": [
+            ["@babel/runtime", "npm:7.12.18"],
+            ["regenerator-runtime", "npm:0.13.7"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:7.12.5", {
           "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.12.5-b3edb8ee8e-423fb00793.zip/node_modules/@babel/runtime/",
           "packageDependencies": [
@@ -12955,7 +12963,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/history-npm-4.10.1-ee217563ae-3b302b54c0.zip/node_modules/history/",
           "packageDependencies": [
             ["history", "npm:4.10.1"],
-            ["@babel/runtime", "npm:7.12.5"],
+            ["@babel/runtime", "npm:7.12.18"],
             ["loose-envify", "npm:1.4.0"],
             ["resolve-pathname", "npm:3.0.0"],
             ["tiny-invariant", "npm:1.1.0"],
@@ -15634,7 +15642,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/mini-create-react-context-virtual-66a9f71080/0/cache/mini-create-react-context-npm-0.4.1-06f382591b-26de37b293.zip/node_modules/mini-create-react-context/",
           "packageDependencies": [
             ["mini-create-react-context", "virtual:422b8a9f35a0a07188e8150dd64860c69634aae9f14ffd3105f3123d5dcbc2984157af71e2c79e1ee8330bc9e734e6cb53c9e195ebd521a3bd88f458620124ab#npm:0.4.1"],
-            ["@babel/runtime", "npm:7.12.5"],
+            ["@babel/runtime", "npm:7.12.18"],
             ["@types/prop-types", null],
             ["@types/react", null],
             ["prop-types", "npm:15.7.2"],
@@ -18497,7 +18505,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/react-router-virtual-422b8a9f35/0/cache/react-router-npm-5.2.0-ae172a6818-4437eaa9ba.zip/node_modules/react-router/",
           "packageDependencies": [
             ["react-router", "virtual:fe587dc137de8f0d527dfc7ccd45feb764aabf0fc64f12976b626895d1d3c990f146acd97cfcd814135018bc41f5d9356bc8797e3eb11bb347119b9c32b55551#npm:5.2.0"],
-            ["@babel/runtime", "npm:7.12.5"],
+            ["@babel/runtime", "npm:7.12.18"],
             ["@types/react", null],
             ["history", "npm:4.10.1"],
             ["hoist-non-react-statics", "npm:3.3.2"],
@@ -18529,7 +18537,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/react-router-dom-virtual-fe587dc137/0/cache/react-router-dom-npm-5.2.0-fdb2839c94-9ad2d72630.zip/node_modules/react-router-dom/",
           "packageDependencies": [
             ["react-router-dom", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:5.2.0"],
-            ["@babel/runtime", "npm:7.12.5"],
+            ["@babel/runtime", "npm:7.12.18"],
             ["@types/react", null],
             ["history", "npm:4.10.1"],
             ["loose-envify", "npm:1.4.0"],

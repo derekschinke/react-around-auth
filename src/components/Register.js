@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 
 function Register() {
   return (
-    <main>
-      <Link to="/signin">Already a member? Log in here!</Link>
-    </main>
+    <section>
+      <h2 className="login__title">Sign up</h2>
+      <Link to="/signin" className="login__link">
+        Already a member? Log in here!
+      </Link>
+    </section>
   );
 }
 

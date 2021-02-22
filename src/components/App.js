@@ -215,7 +215,7 @@ function App() {
 
               <Route exact path="/">
                 {loggedIn ? (
-                  <Redirect to="around" />
+                  <Redirect to="/around" />
                 ) : (
                   <Redirect to="/signin" />
                 )}
