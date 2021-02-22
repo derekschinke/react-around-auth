@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
   Redirect,
+  Link,
 } from 'react-router-dom';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
@@ -151,7 +152,9 @@ function App() {
                 <Header>
                   <div className="header__logged-in">
                     <p className="header__user-email">email@mail.com</p>
-                    <p className="header__log-out button">Log out</p>
+                    <Link to="/signin" className="header__log-out button">
+                      Log out
+                    </Link>
                   </div>
                 </Header>
 
@@ -199,7 +202,9 @@ function App() {
 
               <Route exact path="/signup">
                 <Header>
-                  <p class="header__link button">Log in</p>
+                  <Link to="/signin" class="header__link button">
+                    Log in
+                  </Link>
                 </Header>
 
                 <Register></Register>
@@ -207,7 +212,9 @@ function App() {
 
               <Route exact path="/signin">
                 <Header>
-                  <p class="header__link button">Sign up</p>
+                  <Link to="/signup" class="header__link button">
+                    Sign up
+                  </Link>
                 </Header>
 
                 <Login></Login>
