@@ -59,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.2.0"],
             ["eslint-plugin-testing-library", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:3.10.1"],
             ["gh-pages", "npm:3.1.0"],
+            ["hamburger-react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:2.4.0"],
             ["husky", "npm:5.1.1"],
             ["lint-staged", "npm:10.5.4"],
             ["normalize.css", "npm:8.0.1"],
@@ -12787,6 +12788,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["hamburger-react", [
+        ["npm:2.4.0", {
+          "packageLocation": "./.yarn/cache/hamburger-react-npm-2.4.0-f7e88fd6e9-e48ce801e3.zip/node_modules/hamburger-react/",
+          "packageDependencies": [
+            ["hamburger-react", "npm:2.4.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:2.4.0", {
+          "packageLocation": "./.yarn/$$virtual/hamburger-react-virtual-2b94715095/0/cache/hamburger-react-npm-2.4.0-f7e88fd6e9-e48ce801e3.zip/node_modules/hamburger-react/",
+          "packageDependencies": [
+            ["hamburger-react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:2.4.0"],
+            ["@types/react", null],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["handle-thing", [
         ["npm:2.0.1", {
           "packageLocation": "./.yarn/cache/handle-thing-npm-2.0.1-084baca59e-7509fca9eb.zip/node_modules/handle-thing/",
@@ -18371,6 +18394,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.2.0"],
             ["eslint-plugin-testing-library", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:3.10.1"],
             ["gh-pages", "npm:3.1.0"],
+            ["hamburger-react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:2.4.0"],
             ["husky", "npm:5.1.1"],
             ["lint-staged", "npm:10.5.4"],
             ["normalize.css", "npm:8.0.1"],
