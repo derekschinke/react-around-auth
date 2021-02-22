@@ -5,8 +5,18 @@
   line-height: 22px;
   color: #fff;
   text-decoration: none;
+  padding-top: 5px;
 }
 
 .header__link:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 919px) {
+  .header__link {
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 30px;
+    padding-top: 4px;
+  }
 }
