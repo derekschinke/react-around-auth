@@ -4,7 +4,7 @@ function Login() {
   return (
     <section>
       <h2 className="login__title">Log in</h2>
-      <Link to="/signup" className="login__link">
+      <Link to="/signup" className="login__link button">
         Not a member yet? Sign up here!
       </Link>
     </section>
