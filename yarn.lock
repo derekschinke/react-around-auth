@@ -3198,14 +3198,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.7.2":
-  version: 12.7.2
-  resolution: "@testing-library/user-event@npm:12.7.2"
+"@testing-library/user-event@npm:^12.7.3":
+  version: 12.7.3
+  resolution: "@testing-library/user-event@npm:12.7.3"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 703daa08bc47201adca46cac6974f867e3e50d6c5b73644ab235245f7e6c3c2e8d30f9fa8a6bd063a38f36e9f4404bc9cc0f85ef23734ab95b541d1ac3be11f3
+  checksum: 6e9526e58872b101063ac2350bfe36c1c4ec08752bb2e79c759ed75e70cca653bb413ee4f2d49e625da32d460108b7e0070a40042253f5f0e9333d25e27f65b7
   languageName: node
   linkType: hard
 
@@ -7192,15 +7192,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-flowtype@npm:^5.2.2":
-  version: 5.2.2
-  resolution: "eslint-plugin-flowtype@npm:5.2.2"
+"eslint-plugin-flowtype@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "eslint-plugin-flowtype@npm:5.3.0"
   dependencies:
     lodash: ^4.17.15
     string-natural-compare: ^3.0.1
   peerDependencies:
     eslint: ^7.1.0
-  checksum: 9e44c190dcb7de120d4dc8572eb137fbc0f2080f966aee6f6ab8913708e16fd67c673bdb86dee48860c9c0e37d1cd430a6f07dc2ccfd4db7501b625334a65de2
+  checksum: 81e493fd29fe32614e9e04447f09073a80cbb903f872dd5bbbba49d4c2d16ff10d41e96fd2630588c3a974fd56d384b2ff238d11cc21cbeba89d77a7def9c656
   languageName: node
   linkType: hard
 
@@ -13509,7 +13509,7 @@ fsevents@~2.1.2:
     "@testing-library/dom": ^7.29.6
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.5
-    "@testing-library/user-event": ^12.7.2
+    "@testing-library/user-event": ^12.7.3
     "@typescript-eslint/eslint-plugin": ^4.15.2
     "@typescript-eslint/parser": ^4.15.2
     babel-eslint: ^10.1.0
@@ -13519,7 +13519,7 @@ fsevents@~2.1.2:
     eslint-config-prettier: ^8.0.0
     eslint-config-react-app: ^6.0.0
     eslint-import-resolver-node: ^0.3.4
-    eslint-plugin-flowtype: ^5.2.2
+    eslint-plugin-flowtype: ^5.3.0
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.5
     eslint-plugin-jsx-a11y: ^6.4.1
