@@ -7,6 +7,7 @@ import {
   Redirect,
   Link,
 } from 'react-router-dom';
+import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import Header from './Header';
@@ -151,6 +152,13 @@ function App() {
               <Route exact path="/around">
                 <Header>
                   <div className="header__logged-in">
+                    <Hamburger
+                      className="hamburger"
+                      size={24}
+                      color="#fff"
+                      easing="ease"
+                      label="Show menu"
+                    />
                     <p className="header__user-email">email@mail.com</p>
                     <Link to="/signin" className="header__log-out button">
                       Log out
