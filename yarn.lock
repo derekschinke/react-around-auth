@@ -8981,12 +8981,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "husky@npm:5.1.1"
+"husky@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "husky@npm:5.1.2"
   bin:
     husky: lib/bin.js
-  checksum: 130f2298be383902001827e536b8345a8889609128c182923d9f4c8acae09ce791a3b83d1f67b148dde74d39bd61c17b86c3b4eb7e1dbb9cc7aebcc03b1ff015
+  checksum: 2c20d7132fa8c6f63ba5d7457361351f3c736d60f8faea53e8fde4735e8d75243771fa36bdda94b6e8cbd53f7caa600fa55dbdfc553184903538a9c72cbc61f1
   languageName: node
   linkType: hard
 
@@ -13528,7 +13528,7 @@ fsevents@~2.1.2:
     eslint-plugin-testing-library: ^3.10.1
     gh-pages: ^3.1.0
     hamburger-react: ^2.4.0
-    husky: ^5.1.1
+    husky: ^5.1.2
     lint-staged: ^10.5.4
     normalize.css: ^8.0.1
     prettier: ^2.2.1
