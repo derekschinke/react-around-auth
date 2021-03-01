@@ -152,13 +152,6 @@ function App() {
               <Route exact path="/around">
                 <Header>
                   <div className="header__logged-in">
-                    <Hamburger
-                      className="hamburger"
-                      size={24}
-                      color="#fff"
-                      easing="ease"
-                      label="Show menu"
-                    />
                     <p className="header__user-email">email@mail.com</p>
                     <Link to="/signin" className="header__log-out button">
                       Log out
@@ -226,6 +219,30 @@ function App() {
                 </Header>
 
                 <Login></Login>
+              </Route>
+
+              <Route exact path="/headertest">
+                <header className="header-around">
+                  <div className="header-around__logo-and-hamburger">
+                    <div
+                      role="img"
+                      aria-label="Around The U.S."
+                      className="header-around__logo"
+                    ></div>
+                    <Hamburger
+                      size={24}
+                      color="#fff"
+                      easing="ease"
+                      label="Show menu"
+                    />
+                  </div>
+                  <div className="header__logged-in">
+                    <p className="header__user-email">email@mail.com</p>
+                    <Link to="/signin" className="header__log-out button">
+                      Log out
+                    </Link>
+                  </div>
+                </header>
               </Route>
 
               <Route exact path="/">

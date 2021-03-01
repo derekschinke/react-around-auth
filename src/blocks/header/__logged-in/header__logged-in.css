@@ -1,3 +1,10 @@
 .header__logged-in {
   display: flex;
 }
+
+@media screen and (max-width: 919px) {
+  .header__logged-in {
+    flex-direction: column;
+    border-bottom: 1px solid #545454;
+  }
+}

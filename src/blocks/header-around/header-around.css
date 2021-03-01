@@ -1,0 +1,19 @@
+@import url(./__logo-and-hamburger/header-around__logo-and-hamburger.css);
+@import url(./__logo/header-around__logo.css);
+
+.header-around {
+  padding-top: 45px;
+  margin: 0 auto;
+  height: 74px;
+  border-bottom: 1px solid #545454;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 919px) {
+  .header-around {
+    padding-top: 40px;
+    height: 184px;
+    flex-direction: column-reverse;
+  }
+}

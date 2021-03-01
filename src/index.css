@@ -12,3 +12,5 @@
 @import url(./blocks/popup/_type/popup_type_image.css);
 @import url(./blocks/popup/_opened/popup_opened.css);
 @import url(./blocks/login/login.css);
+@import url(./blocks/hamburger-react/hamburger-react.css);
+@import url(./blocks/header-around/header-around.css);

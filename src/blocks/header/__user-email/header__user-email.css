@@ -9,3 +9,11 @@
   line-height: 22px;
   color: #fff;
 }
+
+@media screen and (max-width: 919px) {
+  .header__user-email {
+    padding-top: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
