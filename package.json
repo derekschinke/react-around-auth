@@ -53,7 +53,7 @@
     "deploy": "gh-pages -d build",
     "preanalyze": "yarn build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
