@@ -10,7 +10,6 @@ import {
 import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
-import PageContainer from './PageContainer';
 import Header from './Header';
 import Login from './Login';
 import Register from './Register';
@@ -35,7 +34,7 @@ function App() {
   const [isAddCardPopupOpen, setIsAddCardPopupOpen] = useState(false);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -124,10 +123,6 @@ function App() {
       });
   }
 
-  function handleHamburgerClick(isToggled) {
-    setIsMenuOpen(!isToggled);
-  }
-
   useEffect(() => {
     api
       .getUserInfo()
@@ -156,7 +151,7 @@ function App() {
         <div className="page">
           <Switch>
             <Route exact path="/around">
-              <PageContainer styling="page__container">
+              <div styling="page__container">
                 <Header>
                   <div className="header__logged-in">
                     <p className="header__user-email">email@mail.com</p>
@@ -206,11 +201,11 @@ function App() {
                   isOpen={isImagePopupOpen}
                   onClose={closeAllPopups}
                 />
-              </PageContainer>
+              </div>
             </Route>
 
             <Route exact path="/signup">
-              <PageContainer styling="page__container">
+              <div styling="page__container">
                 <Header>
                   <Link to="/signin" class="header__link button">
                     Log in
@@ -218,11 +213,11 @@ function App() {
                 </Header>
 
                 <Register></Register>
-              </PageContainer>
+              </div>
             </Route>
 
             <Route exact path="/signin">
-              <PageContainer styling="page__container">
+              <div styling="page__container">
                 <Header>
                   <Link to="/signup" class="header__link button">
                     Sign up
@@ -230,12 +225,12 @@ function App() {
                 </Header>
 
                 <Login></Login>
-              </PageContainer>
+              </div>
             </Route>
 
             <Route exact path="/headertest">
-              <PageContainer
-                styling={`header-around__page-container ${
+              <div
+                className={`header-around__page-container ${
                   isMenuOpen ? 'header-around__page-container_opened' : ''
                 }`}
               >
@@ -251,9 +246,8 @@ function App() {
                       color="#fff"
                       easing="ease"
                       label="Show menu"
-                      onToggle={(toggled) => {
-                        handleHamburgerClick(!toggled);
-                      }}
+                      toggled={isMenuOpen}
+                      toggle={setMenuOpen}
                     />
                   </div>
                   <div className="header__logged-in">
@@ -263,7 +257,7 @@ function App() {
                     </Link>
                   </div>
                 </header>
-              </PageContainer>
+              </div>
             </Route>
 
             <Route exact path="/">
