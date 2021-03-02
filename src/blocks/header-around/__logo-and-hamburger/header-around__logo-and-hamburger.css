@@ -2,10 +2,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-@media screen and (max-width: 919px) {
-  .header-around__logo-and-hamburger {
-    /* padding-bottom: px; */
-    /* align-content: center; */
-  }
-}

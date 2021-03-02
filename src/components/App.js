@@ -10,6 +10,7 @@ import {
 import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
+import PageContainer from './PageContainer';
 import Header from './Header';
 import Login from './Login';
 import Register from './Register';
@@ -33,6 +34,8 @@ function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddCardPopupOpen, setIsAddCardPopupOpen] = useState(false);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -121,6 +124,10 @@ function App() {
       });
   }
 
+  function handleHamburgerClick(isToggled) {
+    setIsMenuOpen(!isToggled);
+  }
+
   useEffect(() => {
     api
       .getUserInfo()
@@ -147,9 +154,9 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
       <Router>
         <div className="page">
-          <div className="page__container">
-            <Switch>
-              <Route exact path="/around">
+          <Switch>
+            <Route exact path="/around">
+              <PageContainer styling="page__container">
                 <Header>
                   <div className="header__logged-in">
                     <p className="header__user-email">email@mail.com</p>
@@ -199,9 +206,11 @@ function App() {
                   isOpen={isImagePopupOpen}
                   onClose={closeAllPopups}
                 />
-              </Route>
+              </PageContainer>
+            </Route>
 
-              <Route exact path="/signup">
+            <Route exact path="/signup">
+              <PageContainer styling="page__container">
                 <Header>
                   <Link to="/signin" class="header__link button">
                     Log in
@@ -209,9 +218,11 @@ function App() {
                 </Header>
 
                 <Register></Register>
-              </Route>
+              </PageContainer>
+            </Route>
 
-              <Route exact path="/signin">
+            <Route exact path="/signin">
+              <PageContainer styling="page__container">
                 <Header>
                   <Link to="/signup" class="header__link button">
                     Sign up
@@ -219,9 +230,15 @@ function App() {
                 </Header>
 
                 <Login></Login>
-              </Route>
+              </PageContainer>
+            </Route>
 
-              <Route exact path="/headertest">
+            <Route exact path="/headertest">
+              <PageContainer
+                styling={`header-around__page-container ${
+                  isMenuOpen ? 'header-around__page-container_opened' : ''
+                }`}
+              >
                 <header className="header-around">
                   <div className="header-around__logo-and-hamburger">
                     <div
@@ -234,6 +251,9 @@ function App() {
                       color="#fff"
                       easing="ease"
                       label="Show menu"
+                      onToggle={(toggled) => {
+                        handleHamburgerClick(!toggled);
+                      }}
                     />
                   </div>
                   <div className="header__logged-in">
@@ -243,19 +263,15 @@ function App() {
                     </Link>
                   </div>
                 </header>
-              </Route>
+              </PageContainer>
+            </Route>
 
-              <Route exact path="/">
-                {loggedIn ? (
-                  <Redirect to="/around" />
-                ) : (
-                  <Redirect to="/signin" />
-                )}
-              </Route>
+            <Route exact path="/">
+              {loggedIn ? <Redirect to="/around" /> : <Redirect to="/signin" />}
+            </Route>
 
-              <Redirect from="*" to="/" />
-            </Switch>
-          </div>
+            <Redirect from="*" to="/" />
+          </Switch>
         </div>
       </Router>
     </CurrentUserContext.Provider>

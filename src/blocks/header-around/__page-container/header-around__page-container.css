@@ -1,0 +1,12 @@
+.header-around__page-container {
+  width: 882px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 919px) {
+  .header-around__page-container {
+    width: 100%;
+    transform: translateY(-143px);
+    transition: transform 0.6s ease;
+  }
+}

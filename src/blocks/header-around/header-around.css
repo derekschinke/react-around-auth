@@ -1,5 +1,7 @@
 @import url(./__logo-and-hamburger/header-around__logo-and-hamburger.css);
 @import url(./__logo/header-around__logo.css);
+@import url(./__page-container/header-around__page-container.css);
+@import url(./__page-container/_opened/header-around__page-container_opened.css);
 
 .header-around {
   padding-top: 45px;
@@ -13,7 +15,7 @@
 @media screen and (max-width: 919px) {
   .header-around {
     padding-top: 40px;
-    height: 184px;
+    height: 187px;
     flex-direction: column-reverse;
   }
 }
