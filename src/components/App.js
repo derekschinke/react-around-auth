@@ -196,31 +196,30 @@ function App() {
                   }}
                 />
                 <Footer />
-
-                <EditProfilePopup
-                  isOpen={isEditProfilePopupOpen}
-                  onClose={closeAllPopups}
-                  onUpdateUser={handleUpdateUser}
-                />
-
-                <EditAvatarPopup
-                  isOpen={isEditAvatarPopupOpen}
-                  onClose={closeAllPopups}
-                  onUpdateAvatar={handleUpdateAvatar}
-                />
-
-                <AddCardPopup
-                  isOpen={isAddCardPopupOpen}
-                  onClose={closeAllPopups}
-                  onAddCard={handleAddCard}
-                />
-
-                <PopupWithImage
-                  card={selectedCard}
-                  isOpen={isImagePopupOpen}
-                  onClose={closeAllPopups}
-                />
               </div>
+              <EditProfilePopup
+                isOpen={isEditProfilePopupOpen}
+                onClose={closeAllPopups}
+                onUpdateUser={handleUpdateUser}
+              />
+
+              <EditAvatarPopup
+                isOpen={isEditAvatarPopupOpen}
+                onClose={closeAllPopups}
+                onUpdateAvatar={handleUpdateAvatar}
+              />
+
+              <AddCardPopup
+                isOpen={isAddCardPopupOpen}
+                onClose={closeAllPopups}
+                onAddCard={handleAddCard}
+              />
+
+              <PopupWithImage
+                card={selectedCard}
+                isOpen={isImagePopupOpen}
+                onClose={closeAllPopups}
+              />
             </Route>
 
             <Route exact path="/signup">
