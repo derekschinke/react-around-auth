@@ -151,8 +151,27 @@ function App() {
         <div className="page">
           <Switch>
             <Route exact path="/around">
-              <div styling="page__container">
-                <Header>
+              <div
+                className={`header-around__page-container ${
+                  isMenuOpen ? 'header-around__page-container_opened' : ''
+                }`}
+              >
+                <Header headerStyle="header-around">
+                  <div className="header-around__logo-and-hamburger">
+                    <div
+                      role="img"
+                      aria-label="Around The U.S."
+                      className="header-around__logo"
+                    ></div>
+                    <Hamburger
+                      size={24}
+                      color="#fff"
+                      easing="ease"
+                      label="Show menu"
+                      toggled={isMenuOpen}
+                      toggle={setMenuOpen}
+                    />
+                  </div>
                   <div className="header__logged-in">
                     <p className="header__user-email">email@mail.com</p>
                     <Link to="/signin" className="header__log-out button">
@@ -205,8 +224,13 @@ function App() {
             </Route>
 
             <Route exact path="/signup">
-              <div styling="page__container">
-                <Header>
+              <div className="page__container">
+                <Header headerStyle="header">
+                  <div
+                    role="img"
+                    aria-label="Around The U.S."
+                    className="header__logo"
+                  ></div>
                   <Link to="/signin" class="header__link button">
                     Log in
                   </Link>
@@ -217,46 +241,19 @@ function App() {
             </Route>
 
             <Route exact path="/signin">
-              <div styling="page__container">
-                <Header>
+              <div className="page__container">
+                <Header headerStyle="header">
+                  <div
+                    role="img"
+                    aria-label="Around The U.S."
+                    className="header__logo"
+                  ></div>
                   <Link to="/signup" class="header__link button">
                     Sign up
                   </Link>
                 </Header>
 
                 <Login></Login>
-              </div>
-            </Route>
-
-            <Route exact path="/headertest">
-              <div
-                className={`header-around__page-container ${
-                  isMenuOpen ? 'header-around__page-container_opened' : ''
-                }`}
-              >
-                <header className="header-around">
-                  <div className="header-around__logo-and-hamburger">
-                    <div
-                      role="img"
-                      aria-label="Around The U.S."
-                      className="header-around__logo"
-                    ></div>
-                    <Hamburger
-                      size={24}
-                      color="#fff"
-                      easing="ease"
-                      label="Show menu"
-                      toggled={isMenuOpen}
-                      toggle={setMenuOpen}
-                    />
-                  </div>
-                  <div className="header__logged-in">
-                    <p className="header__user-email">email@mail.com</p>
-                    <Link to="/signin" className="header__log-out button">
-                      Log out
-                    </Link>
-                  </div>
-                </header>
               </div>
             </Route>
 
