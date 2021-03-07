@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@testing-library/dom", "npm:7.29.6"],
+            ["@testing-library/dom", "npm:7.30.0"],
             ["@testing-library/jest-dom", "npm:5.11.9"],
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.5"],
             ["@testing-library/user-event", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:12.8.1"],
@@ -6123,10 +6123,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:7.29.6", {
-          "packageLocation": "./.yarn/cache/@testing-library-dom-npm-7.29.6-9b14655e34-6102dabce8.zip/node_modules/@testing-library/dom/",
+        ["npm:7.30.0", {
+          "packageLocation": "./.yarn/cache/@testing-library-dom-npm-7.30.0-39543a5358-5af9f762ff.zip/node_modules/@testing-library/dom/",
           "packageDependencies": [
-            ["@testing-library/dom", "npm:7.29.6"],
+            ["@testing-library/dom", "npm:7.30.0"],
             ["@babel/code-frame", "npm:7.10.4"],
             ["@babel/runtime", "npm:7.12.5"],
             ["@types/aria-query", "npm:4.2.0"],
@@ -6197,7 +6197,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@testing-library/user-event", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:12.8.1"],
             ["@babel/runtime", "npm:7.12.5"],
-            ["@testing-library/dom", "npm:7.29.6"],
+            ["@testing-library/dom", "npm:7.30.0"],
             ["@types/testing-library__dom", null]
           ],
           "packagePeers": [
@@ -18371,7 +18371,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["react-around-auth", "workspace:."],
-            ["@testing-library/dom", "npm:7.29.6"],
+            ["@testing-library/dom", "npm:7.30.0"],
             ["@testing-library/jest-dom", "npm:5.11.9"],
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.5"],
             ["@testing-library/user-event", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:12.8.1"],
