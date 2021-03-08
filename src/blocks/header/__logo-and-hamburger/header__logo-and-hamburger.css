@@ -1,4 +1,4 @@
-.header-around__logo-and-hamburger {
+.header__logo-and-hamburger {
   display: flex;
   justify-content: space-between;
 }

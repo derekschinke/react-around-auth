@@ -152,16 +152,16 @@ function App() {
           <Switch>
             <Route exact path="/around">
               <div
-                className={`header-around__page-container ${
-                  isMenuOpen ? 'header-around__page-container_opened' : ''
+                className={`page__container page__container_around ${
+                  isMenuOpen ? 'page__container_around_opened' : ''
                 }`}
               >
-                <Header headerStyle="header-around">
-                  <div className="header-around__logo-and-hamburger">
+                <Header headerStyle="header_around">
+                  <div className="header__logo-and-hamburger">
                     <div
                       role="img"
                       aria-label="Around The U.S."
-                      className="header-around__logo"
+                      className="header__logo header__logo_around"
                     ></div>
                     <Hamburger
                       size={24}

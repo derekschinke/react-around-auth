@@ -1,0 +1,10 @@
+.header__logo_around {
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+@media screen and (max-width: 919px) {
+  .header__logo_around {
+    padding-top: 10.5px;
+  }
+}
