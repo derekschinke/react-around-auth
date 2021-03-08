@@ -1,0 +1,23 @@
+@import url(./__image/card__image.css);
+@import url(./__info/card__info.css);
+@import url(./__title/card__title.css);
+@import url(./__likes/card__likes.css);
+
+.card {
+  margin-bottom: 21px;
+  margin-left: 18px;
+  width: 282px;
+  height: 361px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.card:nth-of-type(3n + 1) {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 919px) {
+  .card {
+    margin-left: 0;
+  }
+}

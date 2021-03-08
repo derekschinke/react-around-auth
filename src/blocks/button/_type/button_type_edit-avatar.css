@@ -1,0 +1,18 @@
+.button_type_edit-avatar {
+  background: transparent url(../../../images/buttons/edit.svg);
+  position: relative;
+  background-size: 100% 100%;
+  border: none;
+  height: 26px;
+  width: 26px;
+  top: -73px;
+  right: -47px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 919px) {
+  .button_type_edit-avatar {
+    top: -73px;
+    right: -128px;
+  }
+}

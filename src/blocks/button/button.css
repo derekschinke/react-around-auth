@@ -1,0 +1,14 @@
+@import url(./_type/button_type_edit.css);
+@import url(./_type/button_type_edit-avatar.css);
+@import url(./_type/button_type_add.css);
+@import url(./_type/button_type_like.css);
+@import url(./_type/button_type_liked.css);
+@import url(./_type/button_type_close.css);
+@import url(./_type/_type/button_type_close_type_image.css);
+@import url(./_type/button_type_submit.css);
+@import url(./_type/button_type_delete.css);
+
+.button {
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}

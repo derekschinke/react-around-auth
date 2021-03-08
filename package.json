@@ -2,34 +2,47 @@
   "name": "react-around-auth",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://derekschinke-practicum.github.io/react-around-auth/",
   "dependencies": {
-    "@testing-library/dom": "^7.29.0",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "@yarnpkg/pnpify": "^2.4.0",
+    "@testing-library/dom": "^7.30.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "babel-eslint": "^10.1.0",
     "editorconfig": "^0.15.3",
-    "eslint": "^7.15.0",
+    "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-import-resolver-node": "^0.3.4",
-    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-flowtype": "^5.3.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jest": "^24.1.8",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.0",
-    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
     "gh-pages": "^3.1.0",
+    "hamburger-react": "^2.4.0",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
     "normalize.css": "^8.0.1",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "source-map-explorer": "^2.5.1",
-    "web-vitals": "^1.0.1"
+    "react-refresh": "^0.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "source-map-explorer": "^2.5.2",
+    "web-vitals": "^1.1.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   },
   "scripts": {
     "start": "BROWSER='firefox developer edition' react-scripts start",
@@ -39,21 +52,24 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "preanalyze": "yarn build",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "postinstall": "husky install"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest",
       "airbnb-base",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
+      "plugin:prettier/recommended"
     ],
     "rules": {
-      "prettier/prettier": [
-        "error"
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
       ]
     }
   },

@@ -1,0 +1,10 @@
+.popup__container_type_image {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: unset;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

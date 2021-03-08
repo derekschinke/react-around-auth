@@ -1,0 +1,23 @@
+.button_type_edit {
+  margin-top: 19px;
+  margin-left: 24px;
+  width: 24px;
+  height: 24px;
+  background: #000 url(../../../images/buttons/edit.svg) center/10px 10px
+    no-repeat;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.button_type_edit:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 919px) {
+  .button_type_edit {
+    width: 18px;
+    height: 18px;
+    background-size: 7.5px 7.5px;
+    margin-left: 12px;
+  }
+}

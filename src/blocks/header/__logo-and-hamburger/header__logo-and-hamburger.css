@@ -1,0 +1,4 @@
+.header__logo-and-hamburger {
+  display: flex;
+  justify-content: space-between;
+}

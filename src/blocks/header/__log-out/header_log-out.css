@@ -1,0 +1,21 @@
+.header__log-out {
+  padding-top: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #a9a9a9;
+  text-decoration: none;
+}
+
+.header__log-out:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 919px) {
+  .header__log-out {
+    padding-top: 18px;
+    padding-bottom: 40px;
+    margin: auto;
+  }
+}
