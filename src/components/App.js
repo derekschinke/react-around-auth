@@ -11,14 +11,14 @@ import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import Header from './Header';
-import Login from './Login';
-import Register from './Register';
 import Main from './Main';
 import Footer from './Footer';
 import PopupWithImage from './PopupWithImage';
 import EditProfilePopup from './EditProfilePopup';
 import EditAvatarPopup from './EditAvatarPopup';
 import AddCardPopup from './AddCardPopup';
+import Login from './Login';
+import Register from './Register';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
