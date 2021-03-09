@@ -1,2 +1,6 @@
 @import url(./__title/account__title.css);
 @import url(./__link/account__link.css);
+
+.account {
+  text-align: center;
+}

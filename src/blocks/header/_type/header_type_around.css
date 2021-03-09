@@ -1,4 +1,4 @@
-.header_around {
+.header_type_around {
   padding-top: 45px;
   margin: 0 auto;
   height: 74px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 919px) {
-  .header_around {
+  .header_type_around {
     padding-top: 40px;
     height: 187px;
     flex-direction: column-reverse;

@@ -156,7 +156,7 @@ function App() {
                   isMenuOpen ? 'page__container_around_opened' : ''
                 }`}
               >
-                <Header headerStyle="header_around">
+                <Header headerStyle="header_type_around">
                   <div className="header__logo-and-hamburger">
                     <div
                       role="img"

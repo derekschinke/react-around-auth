@@ -3,7 +3,9 @@
 @import url(./__title/popup__title.css);
 @import url(./__form/popup__form.css);
 @import url(./__form/_type/popup__form_type_delete.css);
+@import url(./__form/_type/popup__form_type_account.css);
 @import url(./__input/popup__input.css);
+@import url(./__input/_type/popup__input_type_account.css);
 @import url(./__input/_type/popup__input_type_error.css);
 @import url(./__figure/popup__figure.css);
 @import url(./__image/popup__image.css);
