@@ -1,9 +1,9 @@
-.header__logged-in {
+.header__account {
   display: flex;
 }
 
 @media screen and (max-width: 919px) {
-  .header__logged-in {
+  .header__account {
     flex-direction: column;
     border-bottom: 1px solid #545454;
   }

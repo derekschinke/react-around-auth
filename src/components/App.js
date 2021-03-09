@@ -172,7 +172,7 @@ function App() {
                       toggle={setMenuOpen}
                     />
                   </div>
-                  <div className="header__logged-in">
+                  <div className="header__account">
                     <p className="header__user-email">email@mail.com</p>
                     <Link to="/signin" className="header__log-out button">
                       Log out
