@@ -1,6 +1,5 @@
 .popup__form_type_account {
   transform: translateY(0);
-  padding-top: 20.26px;
 }
 
 @media screen and (max-width: 919px) {

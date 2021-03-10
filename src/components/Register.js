@@ -18,7 +18,7 @@ function Register() {
           ></input>
         </label>
         <input
-          className="button button_type_submit"
+          className="button button_type_submit button_type_submit_type_account"
           type="submit"
           value="Sign up"
         ></input>
