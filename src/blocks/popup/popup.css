@@ -12,6 +12,7 @@
 @import url(./__caption/popup__caption.css);
 @import url(./__error/popup__error.css);
 @import url(./__button/popup__button.css);
+@import url(./__spacer/popup__spacer.css);
 
 .popup {
   position: fixed;

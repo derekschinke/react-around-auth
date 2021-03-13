@@ -17,6 +17,7 @@ function Register() {
             defaultValue="Password"
           ></input>
         </label>
+        <div className="popup__spacer"></div>
         <input
           className="button button_type_submit button_type_submit_type_account"
           type="submit"

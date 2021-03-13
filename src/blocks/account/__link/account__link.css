@@ -17,5 +17,6 @@
   .account__link {
     font-size: 12px;
     line-height: 15px;
+    padding-bottom: 42px;
   }
 }

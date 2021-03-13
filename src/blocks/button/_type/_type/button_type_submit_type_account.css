@@ -4,6 +4,13 @@
   margin: 0 0 15px !important;
 }
 
+@media screen and (max-width: 919px) {
+  .button_type_submit_type_account {
+    width: 260px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
 .button_type_submit_type_account:hover {
   opacity: 0.85 !important;
 }
