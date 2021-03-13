@@ -1,5 +1,9 @@
 .popup__input_type_account {
   background-color: #000;
-  color: #ccc;
   border-bottom: 2px solid #ccc;
+}
+
+.popup__input_type_account::placeholder {
+  color: #ccc;
+  opacity: 1;
 }

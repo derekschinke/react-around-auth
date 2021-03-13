@@ -10,6 +10,11 @@
   box-shadow: none;
 }
 
+.popup__input::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
 @media screen and (max-width: 919px) {
   .popup__input {
     font-size: 12px;

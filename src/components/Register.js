@@ -8,13 +8,13 @@ function Register() {
         <label>
           <input
             className="popup__input popup__input_type_account"
-            defaultValue="Email"
+            placeholder="Email"
           ></input>
         </label>
         <label>
           <input
             className="popup__input popup__input_type_account"
-            defaultValue="Password"
+            placeholder="Password"
           ></input>
         </label>
         <div className="popup__spacer"></div>
