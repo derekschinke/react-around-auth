@@ -7237,14 +7237,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.2.1":
-  version: 24.2.1
-  resolution: "eslint-plugin-jest@npm:24.2.1"
+"eslint-plugin-jest@npm:^24.3.1":
+  version: 24.3.1
+  resolution: "eslint-plugin-jest@npm:24.3.1"
   dependencies:
     "@typescript-eslint/experimental-utils": ^4.0.1
   peerDependencies:
+    "@typescript-eslint/eslint-plugin": ">= 4"
     eslint: ">=5"
-  checksum: c34048a4fd902fefe4212edc8fcb2665bc01004c975a37eda4eb00c5ecaa890e5740036a6ffb23181ddad46c77d8d91221f50c5a3d724a3730d9698d18055d43
+  peerDependenciesMeta:
+    "@typescript-eslint/eslint-plugin":
+      optional: true
+  checksum: e73f5e4eff8cd8ecc3bc0e75452ad871c386ca6844d4a0cc0237c4ac53cef0ab6ef347d0a66c2f4899a647f6e669d6c114ee657139c754278dcf9fcc82ae99d4
   languageName: node
   linkType: hard
 
@@ -13536,7 +13540,7 @@ fsevents@~2.1.2:
     eslint-import-resolver-node: ^0.3.4
     eslint-plugin-flowtype: ^5.3.1
     eslint-plugin-import: ^2.22.1
-    eslint-plugin-jest: ^24.2.1
+    eslint-plugin-jest: ^24.3.1
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.3.1
     eslint-plugin-react: ^7.22.0
@@ -13554,7 +13558,7 @@ fsevents@~2.1.2:
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
     source-map-explorer: ^2.5.2
-    web-vitals: ^1.1.0
+    web-vitals: ^1.1.1
   languageName: unknown
   linkType: soft
 
@@ -16468,10 +16472,10 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "web-vitals@npm:1.1.0"
-  checksum: b75f7929f0b0bbd055c67eab95024c16038dcc808873dd7406225318c79491f011d9c2cf7c8cf68109c21fb0e9fa292eee3977b9ac780626d17ad25b36cd2ffe
+"web-vitals@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "web-vitals@npm:1.1.1"
+  checksum: e84e449f46d5bdae9bc3d9d03647e654970bbe7fd448ecc8051ae06bcb869aa29cdcd16486786db416ca7a6e43a2f87e0f66662437ec5679761bcdd753a8c055
   languageName: node
   linkType: hard
 
