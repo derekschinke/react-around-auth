@@ -230,7 +230,7 @@ function App() {
                     aria-label="Around The U.S."
                     className="header__logo"
                   ></div>
-                  <Link to="/signin" class="header__link button">
+                  <Link to="/signin" className="header__link button">
                     Log in
                   </Link>
                 </Header>
@@ -247,7 +247,7 @@ function App() {
                     aria-label="Around The U.S."
                     className="header__logo"
                   ></div>
-                  <Link to="/signup" class="header__link button">
+                  <Link to="/signup" className="header__link button">
                     Sign up
                   </Link>
                 </Header>
