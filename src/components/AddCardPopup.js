@@ -30,6 +30,7 @@ function AddCardPopup(props) {
       isOpen={props.isOpen}
       onClose={props.onClose}
       onSubmit={handleSubmit}
+      isPopup={true}
     >
       <label>
         <input
