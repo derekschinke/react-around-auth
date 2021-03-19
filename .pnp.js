@@ -12346,10 +12346,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:b3bb56017c1bc5ebe572bea2bc1dc0d1cbec602a019eb63b15dae022ac47b3cb9a0b37c4797481cc37b7a9157b51eea4ff9261c9af34097bd33f554e706fd12e#npm:4.1.6", {
-          "packageLocation": "./.yarn/$$virtual/fork-ts-checker-webpack-plugin-virtual-d16d5dd09d/0/cache/fork-ts-checker-webpack-plugin-npm-4.1.6-eab9dd8e44-72d87aed42.zip/node_modules/fork-ts-checker-webpack-plugin/",
+        ["virtual:669ac2e406d41d423b3af290fe0072673e6f34635db4753f1ffc6cde9dea50c27d8064a43853b21ee14022f3312e6c9e18753fe663d5c50b7c5edbd3f423d038#npm:4.1.6", {
+          "packageLocation": "./.yarn/$$virtual/fork-ts-checker-webpack-plugin-virtual-2c0852ead7/0/cache/fork-ts-checker-webpack-plugin-npm-4.1.6-eab9dd8e44-72d87aed42.zip/node_modules/fork-ts-checker-webpack-plugin/",
           "packageDependencies": [
-            ["fork-ts-checker-webpack-plugin", "virtual:b3bb56017c1bc5ebe572bea2bc1dc0d1cbec602a019eb63b15dae022ac47b3cb9a0b37c4797481cc37b7a9157b51eea4ff9261c9af34097bd33f554e706fd12e#npm:4.1.6"],
+            ["fork-ts-checker-webpack-plugin", "virtual:669ac2e406d41d423b3af290fe0072673e6f34635db4753f1ffc6cde9dea50c27d8064a43853b21ee14022f3312e6c9e18753fe663d5c50b7c5edbd3f423d038#npm:4.1.6"],
             ["@babel/code-frame", "npm:7.10.4"],
             ["@types/eslint", null],
             ["@types/typescript", null],
@@ -12361,7 +12361,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:5.7.1"],
             ["tapable", "npm:1.1.3"],
             ["typescript", null],
-            ["webpack", null],
+            ["webpack", "virtual:ede5590b11fe1d99cd727a070aa25bc72251f9e7da77656d45a55bee09cd1a329521e5ae9eab90640642d91a316591b6c7e989940b853406336085df0affb815#npm:4.44.2"],
             ["worker-rpc", "npm:0.1.1"]
           ],
           "packagePeers": [
@@ -18432,8 +18432,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["npm:11.0.3", {
           "packageLocation": "./.yarn/cache/react-dev-utils-npm-11.0.3-b3bb56017c-b2f338fd21.zip/node_modules/react-dev-utils/",
           "packageDependencies": [
-            ["react-dev-utils", "npm:11.0.3"],
+            ["react-dev-utils", "npm:11.0.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:ede5590b11fe1d99cd727a070aa25bc72251f9e7da77656d45a55bee09cd1a329521e5ae9eab90640642d91a316591b6c7e989940b853406336085df0affb815#npm:11.0.3", {
+          "packageLocation": "./.yarn/$$virtual/react-dev-utils-virtual-669ac2e406/0/cache/react-dev-utils-npm-11.0.3-b3bb56017c-b2f338fd21.zip/node_modules/react-dev-utils/",
+          "packageDependencies": [
+            ["react-dev-utils", "virtual:ede5590b11fe1d99cd727a070aa25bc72251f9e7da77656d45a55bee09cd1a329521e5ae9eab90640642d91a316591b6c7e989940b853406336085df0affb815#npm:11.0.3"],
             ["@babel/code-frame", "npm:7.10.4"],
+            ["@types/typescript", null],
+            ["@types/webpack", null],
             ["address", "npm:1.1.2"],
             ["browserslist", "npm:4.14.2"],
             ["chalk", "npm:2.4.2"],
@@ -18442,7 +18451,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["escape-string-regexp", "npm:2.0.0"],
             ["filesize", "npm:6.1.0"],
             ["find-up", "npm:4.1.0"],
-            ["fork-ts-checker-webpack-plugin", "virtual:b3bb56017c1bc5ebe572bea2bc1dc0d1cbec602a019eb63b15dae022ac47b3cb9a0b37c4797481cc37b7a9157b51eea4ff9261c9af34097bd33f554e706fd12e#npm:4.1.6"],
+            ["fork-ts-checker-webpack-plugin", "virtual:669ac2e406d41d423b3af290fe0072673e6f34635db4753f1ffc6cde9dea50c27d8064a43853b21ee14022f3312e6c9e18753fe663d5c50b7c5edbd3f423d038#npm:4.1.6"],
             ["global-modules", "npm:2.0.0"],
             ["globby", "npm:11.0.1"],
             ["gzip-size", "npm:5.1.1"],
@@ -18456,7 +18465,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["recursive-readdir", "npm:2.2.2"],
             ["shell-quote", "npm:1.7.2"],
             ["strip-ansi", "npm:6.0.0"],
-            ["text-table", "npm:0.2.0"]
+            ["text-table", "npm:0.2.0"],
+            ["typescript", null],
+            ["webpack", "virtual:ede5590b11fe1d99cd727a070aa25bc72251f9e7da77656d45a55bee09cd1a329521e5ae9eab90640642d91a316591b6c7e989940b853406336085df0affb815#npm:4.44.2"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "@types/webpack",
+            "typescript",
+            "webpack"
           ],
           "linkType": "HARD",
         }]
@@ -18648,7 +18665,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prompts", "npm:2.4.0"],
             ["react", "npm:17.0.1"],
             ["react-app-polyfill", "npm:2.0.0"],
-            ["react-dev-utils", "npm:11.0.3"],
+            ["react-dev-utils", "virtual:ede5590b11fe1d99cd727a070aa25bc72251f9e7da77656d45a55bee09cd1a329521e5ae9eab90640642d91a316591b6c7e989940b853406336085df0affb815#npm:11.0.3"],
             ["react-refresh", "npm:0.8.3"],
             ["resolve", "patch:resolve@npm%3A1.18.1#builtin<compat/resolve>::version=1.18.1&hash=3388aa"],
             ["resolve-url-loader", "npm:3.1.2"],
