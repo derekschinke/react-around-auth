@@ -4840,28 +4840,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@testing-library/dom", [
-        ["npm:7.29.0", {
-          "packageLocation": "./.yarn/cache/@testing-library-dom-npm-7.29.0-c5cd61d0be-d737cdc14e.zip/node_modules/@testing-library/dom/",
-          "packageDependencies": [
-            ["@testing-library/dom", "npm:7.29.0"],
-            ["@babel/code-frame", "npm:7.10.4"],
-            ["@babel/runtime", "npm:7.12.5"],
-            ["@types/aria-query", "npm:4.2.0"],
-            ["aria-query", "npm:4.2.2"],
-            ["chalk", "npm:4.1.0"],
-            ["dom-accessibility-api", "npm:0.5.4"],
-            ["lz-string", "npm:1.4.4"],
-            ["pretty-format", "npm:26.6.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.30.0", {
           "packageLocation": "./.yarn/cache/@testing-library-dom-npm-7.30.0-39543a5358-5af9f762ff.zip/node_modules/@testing-library/dom/",
           "packageDependencies": [
             ["@testing-library/dom", "npm:7.30.0"],
             ["@babel/code-frame", "npm:7.10.4"],
             ["@babel/runtime", "npm:7.12.5"],
-            ["@types/aria-query", "npm:4.2.0"],
+            ["@types/aria-query", "npm:4.2.1"],
             ["aria-query", "npm:4.2.2"],
             ["chalk", "npm:4.1.0"],
             ["dom-accessibility-api", "npm:0.5.4"],
@@ -4901,7 +4886,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.5"],
             ["@babel/runtime", "npm:7.12.5"],
-            ["@testing-library/dom", "npm:7.29.0"],
+            ["@testing-library/dom", "npm:7.30.0"],
             ["@types/react", null],
             ["@types/react-dom", null],
             ["react", "npm:17.0.1"],
@@ -4949,10 +4934,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/aria-query", [
-        ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/@types-aria-query-npm-4.2.0-803d8a2ce7-196c811653.zip/node_modules/@types/aria-query/",
+        ["npm:4.2.1", {
+          "packageLocation": "./.yarn/cache/@types-aria-query-npm-4.2.1-4248197909-1b64d16e09.zip/node_modules/@types/aria-query/",
           "packageDependencies": [
-            ["@types/aria-query", "npm:4.2.0"]
+            ["@types/aria-query", "npm:4.2.1"]
           ],
           "linkType": "HARD",
         }]

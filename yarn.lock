@@ -2296,23 +2296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1":
-  version: 7.29.0
-  resolution: "@testing-library/dom@npm:7.29.0"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@types/aria-query": ^4.2.0
-    aria-query: ^4.2.2
-    chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.4
-    lz-string: ^1.4.4
-    pretty-format: ^26.6.2
-  checksum: d737cdc14eea4addf0e9f2901fe0f0685e795c899d6a1fed014d80b136a4e1c64d3b136c4f389f8e9354db0e61b5edf9b1f18b339de401a42fbea4ec2696ef1c
-  languageName: node
-  linkType: hard
-
-"@testing-library/dom@npm:^7.30.0":
+"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.30.0":
   version: 7.30.0
   resolution: "@testing-library/dom@npm:7.30.0"
   dependencies:
@@ -2376,9 +2360,9 @@ __metadata:
   linkType: hard
 
 "@types/aria-query@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@types/aria-query@npm:4.2.0"
-  checksum: 196c811653507cc0601bb1260ddeb58d80797306cf71638605d64d26ae324345b4b95514617942aadf5b899602623cf848ba6780e921526ef5cf0b0cae80825f
+  version: 4.2.1
+  resolution: "@types/aria-query@npm:4.2.1"
+  checksum: 1b64d16e09ebb071f9c97a4a0ae0d0f6b573a3c14e9f966d51c9ebfc30d19681782428d7cb4ec75d93aa1b58a857f5f17babbfedeefebc85c4047cf5f6b96d5f
   languageName: node
   linkType: hard
 
