@@ -12514,6 +12514,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["is-unicode-supported", [
+        ["npm:0.1.0", {
+          "packageLocation": "./.yarn/cache/is-unicode-supported-npm-0.1.0-0833e1bbfb-00ca6f5581.zip/node_modules/is-unicode-supported/",
+          "packageDependencies": [
+            ["is-unicode-supported", "npm:0.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["is-windows", [
         ["npm:1.0.2", {
           "packageLocation": "./.yarn/cache/is-windows-npm-1.0.2-898cd6f3d7-dd1ed8339a.zip/node_modules/is-windows/",
@@ -13599,8 +13608,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dedent", "npm:0.7.0"],
             ["enquirer", "npm:2.3.6"],
             ["execa", "npm:4.1.0"],
-            ["listr2", "virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.2.3"],
-            ["log-symbols", "npm:4.0.0"],
+            ["listr2", "virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.4.3"],
+            ["log-symbols", "npm:4.1.0"],
             ["micromatch", "npm:4.0.2"],
             ["normalize-path", "npm:3.0.0"],
             ["please-upgrade-node", "npm:3.2.0"],
@@ -13611,17 +13620,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["listr2", [
-        ["npm:3.2.3", {
-          "packageLocation": "./.yarn/cache/listr2-npm-3.2.3-3357d6df40-83f7659bd9.zip/node_modules/listr2/",
+        ["npm:3.4.3", {
+          "packageLocation": "./.yarn/cache/listr2-npm-3.4.3-6205834e61-e5c2a8561c.zip/node_modules/listr2/",
           "packageDependencies": [
-            ["listr2", "npm:3.2.3"]
+            ["listr2", "npm:3.4.3"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.2.3", {
-          "packageLocation": "./.yarn/$$virtual/listr2-virtual-8263336e61/0/cache/listr2-npm-3.2.3-3357d6df40-83f7659bd9.zip/node_modules/listr2/",
+        ["virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.4.3", {
+          "packageLocation": "./.yarn/$$virtual/listr2-virtual-1f3f776580/0/cache/listr2-npm-3.4.3-6205834e61-e5c2a8561c.zip/node_modules/listr2/",
           "packageDependencies": [
-            ["listr2", "virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.2.3"],
+            ["listr2", "virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.4.3"],
             ["@types/enquirer", null],
             ["chalk", "npm:4.1.0"],
             ["cli-truncate", "npm:2.1.0"],
@@ -13630,8 +13639,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["indent-string", "npm:4.0.0"],
             ["log-update", "npm:4.0.0"],
             ["p-map", "npm:4.0.0"],
-            ["rxjs", "npm:6.6.3"],
-            ["through", "npm:2.3.8"]
+            ["rxjs", "npm:6.6.6"],
+            ["through", "npm:2.3.8"],
+            ["wrap-ansi", "npm:7.0.0"]
           ],
           "packagePeers": [
             "@types/enquirer",
@@ -13805,11 +13815,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["log-symbols", [
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/log-symbols-npm-4.0.0-7291c4d053-2cbdb0427d.zip/node_modules/log-symbols/",
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/log-symbols-npm-4.1.0-0a13492d8b-57be4aeb6a.zip/node_modules/log-symbols/",
           "packageDependencies": [
-            ["log-symbols", "npm:4.0.0"],
-            ["chalk", "npm:4.1.0"]
+            ["log-symbols", "npm:4.1.0"],
+            ["chalk", "npm:4.1.0"],
+            ["is-unicode-supported", "npm:0.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17929,10 +17940,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["rxjs", [
-        ["npm:6.6.3", {
-          "packageLocation": "./.yarn/cache/rxjs-npm-6.6.3-a1e67d677b-61a3da6db9.zip/node_modules/rxjs/",
+        ["npm:6.6.6", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-6.6.6-6db0e615a2-c97b410e79.zip/node_modules/rxjs/",
           "packageDependencies": [
-            ["rxjs", "npm:6.6.3"],
+            ["rxjs", "npm:6.6.6"],
             ["tslib", "npm:1.14.1"]
           ],
           "linkType": "HARD",
