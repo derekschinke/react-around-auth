@@ -9193,10 +9193,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:3.1.5", {
-          "packageLocation": "./.yarn/cache/ejs-npm-3.1.5-5ba4037886-463e8740cc.zip/node_modules/ejs/",
+        ["npm:3.1.6", {
+          "packageLocation": "./.yarn/cache/ejs-npm-3.1.6-03db39fd15-cb77a9368e.zip/node_modules/ejs/",
           "packageDependencies": [
-            ["ejs", "npm:3.1.5"],
+            ["ejs", "npm:3.1.6"],
             ["jake", "npm:10.8.2"]
           ],
           "linkType": "HARD",
@@ -10496,10 +10496,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["filelist", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/filelist-npm-1.0.1-f25fc749a1-8ee441df31.zip/node_modules/filelist/",
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/filelist-npm-1.0.2-d98495ab20-f8bf29d317.zip/node_modules/filelist/",
           "packageDependencies": [
-            ["filelist", "npm:1.0.1"],
+            ["filelist", "npm:1.0.2"],
             ["minimatch", "npm:3.0.4"]
           ],
           "linkType": "HARD",
@@ -12656,7 +12656,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jake", "npm:10.8.2"],
             ["async", "npm:0.9.2"],
             ["chalk", "npm:2.4.2"],
-            ["filelist", "npm:1.0.1"],
+            ["filelist", "npm:1.0.2"],
             ["minimatch", "npm:3.0.4"]
           ],
           "linkType": "HARD",
@@ -14977,15 +14977,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["open", [
-        ["npm:7.3.1", {
-          "packageLocation": "./.yarn/cache/open-npm-7.3.1-fd96dacb88-102d5ee884.zip/node_modules/open/",
-          "packageDependencies": [
-            ["open", "npm:7.3.1"],
-            ["is-docker", "npm:2.1.1"],
-            ["is-wsl", "npm:2.2.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.4.2", {
           "packageLocation": "./.yarn/cache/open-npm-7.4.2-a378c23959-07545fa768.zip/node_modules/open/",
           "packageDependencies": [
@@ -18536,12 +18527,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["btoa", "npm:1.2.1"],
             ["chalk", "npm:4.1.0"],
             ["convert-source-map", "npm:1.7.0"],
-            ["ejs", "npm:3.1.5"],
+            ["ejs", "npm:3.1.6"],
             ["escape-html", "npm:1.0.3"],
             ["glob", "npm:7.1.6"],
             ["gzip-size", "npm:6.0.0"],
             ["lodash", "npm:4.17.20"],
-            ["open", "npm:7.3.1"],
+            ["open", "npm:7.4.2"],
             ["source-map", "npm:0.7.3"],
             ["temp", "npm:0.9.4"],
             ["yargs", "npm:16.2.0"]
@@ -21081,7 +21072,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["require-directory", "npm:2.1.1"],
             ["string-width", "npm:4.2.0"],
             ["y18n", "npm:5.0.5"],
-            ["yargs-parser", "npm:20.2.4"]
+            ["yargs-parser", "npm:20.2.7"]
           ],
           "linkType": "HARD",
         }]
@@ -21105,10 +21096,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:20.2.4", {
-          "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.4-1de20916a6-00dd0f23b6.zip/node_modules/yargs-parser/",
+        ["npm:20.2.7", {
+          "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.7-5ab0b83136-124e7f1c24.zip/node_modules/yargs-parser/",
           "packageDependencies": [
-            ["yargs-parser", "npm:20.2.4"]
+            ["yargs-parser", "npm:20.2.7"]
           ],
           "linkType": "HARD",
         }]
