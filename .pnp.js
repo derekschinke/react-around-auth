@@ -4876,7 +4876,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.11.9-ad0c7dbe3e-c285c044ed.zip/node_modules/@testing-library/jest-dom/",
           "packageDependencies": [
             ["@testing-library/jest-dom", "npm:5.11.9"],
-            ["@babel/runtime", "npm:7.12.5"],
+            ["@babel/runtime", "npm:7.13.10"],
             ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["aria-query", "npm:4.2.2"],
             ["chalk", "npm:3.0.0"],
@@ -5089,10 +5089,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/jest", [
-        ["npm:26.0.19", {
-          "packageLocation": "./.yarn/cache/@types-jest-npm-26.0.19-add5d117dd-98c8daaf89.zip/node_modules/@types/jest/",
+        ["npm:26.0.21", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-26.0.21-7bb11f0108-c219599d66.zip/node_modules/@types/jest/",
           "packageDependencies": [
-            ["@types/jest", "npm:26.0.19"],
+            ["@types/jest", "npm:26.0.21"],
             ["jest-diff", "npm:26.6.2"],
             ["pretty-format", "npm:26.6.2"]
           ],
@@ -5220,7 +5220,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.9.5-5a42b58918-32aa324a83.zip/node_modules/@types/testing-library__jest-dom/",
           "packageDependencies": [
             ["@types/testing-library__jest-dom", "npm:5.9.5"],
-            ["@types/jest", "npm:26.0.19"]
+            ["@types/jest", "npm:26.0.21"]
           ],
           "linkType": "HARD",
         }]
