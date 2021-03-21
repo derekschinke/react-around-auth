@@ -21,6 +21,7 @@ function EditAvatarPopup(props) {
       onClose={props.onClose}
       onSubmit={handleSubmit}
       isPopup={true}
+      submitButtonClass="popup__button"
     >
       <label>
         <input

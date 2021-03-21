@@ -11,7 +11,7 @@ function PopupWithForm(props) {
       <input
         type="submit"
         value={`${props.buttonValue}`}
-        className="button button_type_submit popup__button"
+        className={`button button_type_submit ${props.submitButtonClass}`}
       />
     </form>
   );
