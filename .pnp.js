@@ -37,7 +37,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@prettier/plugin-xml", "npm:0.13.1"],
             ["@testing-library/dom", "npm:7.30.0"],
             ["@testing-library/jest-dom", "npm:5.11.9"],
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.5"],
@@ -4572,17 +4571,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["@prettier/plugin-xml", [
-        ["npm:0.13.1", {
-          "packageLocation": "./.yarn/cache/@prettier-plugin-xml-npm-0.13.1-8c8fdf4f05-ace6ff40b1.zip/node_modules/@prettier/plugin-xml/",
-          "packageDependencies": [
-            ["@prettier/plugin-xml", "npm:0.13.1"],
-            ["@xml-tools/parser", "npm:1.0.10"],
-            ["prettier", "npm:2.2.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["@rollup/plugin-node-resolve", [
         ["npm:7.1.3", {
           "packageLocation": "./.yarn/cache/@rollup-plugin-node-resolve-npm-7.1.3-42815f6ad9-4d751a407f.zip/node_modules/@rollup/plugin-node-resolve/",
@@ -5764,16 +5752,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@webassemblyjs/ast", "npm:1.9.0"],
             ["@webassemblyjs/wast-parser", "npm:1.9.0"],
             ["@xtuc/long", "npm:4.2.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@xml-tools/parser", [
-        ["npm:1.0.10", {
-          "packageLocation": "./.yarn/cache/@xml-tools-parser-npm-1.0.10-b58f72b72b-b238e7e7dc.zip/node_modules/@xml-tools/parser/",
-          "packageDependencies": [
-            ["@xml-tools/parser", "npm:1.0.10"],
-            ["chevrotain", "npm:7.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -7551,16 +7529,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/check-types-npm-11.1.2-67e85ffacd-e756b5a813.zip/node_modules/check-types/",
           "packageDependencies": [
             ["check-types", "npm:11.1.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["chevrotain", [
-        ["npm:7.1.1", {
-          "packageLocation": "./.yarn/cache/chevrotain-npm-7.1.1-6e18695936-b942de3ed9.zip/node_modules/chevrotain/",
-          "packageDependencies": [
-            ["chevrotain", "npm:7.1.1"],
-            ["regexp-to-ast", "npm:0.5.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17011,7 +16979,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["react-around-auth", "workspace:."],
-            ["@prettier/plugin-xml", "npm:0.13.1"],
             ["@testing-library/dom", "npm:7.30.0"],
             ["@testing-library/jest-dom", "npm:5.11.9"],
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.5"],
@@ -17484,15 +17451,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/regex-parser-npm-2.2.11-946d73634f-434f82a8ce.zip/node_modules/regex-parser/",
           "packageDependencies": [
             ["regex-parser", "npm:2.2.11"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["regexp-to-ast", [
-        ["npm:0.5.0", {
-          "packageLocation": "./.yarn/cache/regexp-to-ast-npm-0.5.0-1e96b9f3a0-48c7c8dc0f.zip/node_modules/regexp-to-ast/",
-          "packageDependencies": [
-            ["regexp-to-ast", "npm:0.5.0"]
           ],
           "linkType": "HARD",
         }]

@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://derekschinke-practicum.github.io/react-around-auth/",
   "dependencies": {
-    "@prettier/plugin-xml": "^0.13.1",
     "@testing-library/dom": "^7.30.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
