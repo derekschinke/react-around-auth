@@ -2088,6 +2088,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prettier/plugin-xml@npm:^0.13.1":
+  version: 0.13.1
+  resolution: "@prettier/plugin-xml@npm:0.13.1"
+  dependencies:
+    "@xml-tools/parser": ^1.0.2
+    prettier: ">=1.10"
+  checksum: ace6ff40b14e5e9a2518681013f59a2d3fb559d6aa6d00af84c483e4a2a722eb44e1a5da14b4939c5ba094641a7406fc37a3ac836caee177724045f567b1b8b3
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-node-resolve@npm:^7.1.1":
   version: 7.1.3
   resolution: "@rollup/plugin-node-resolve@npm:7.1.3"
@@ -3025,6 +3035,15 @@ __metadata:
     "@webassemblyjs/wast-parser": 1.9.0
     "@xtuc/long": 4.2.2
   checksum: 9f013b27e28b60cb215011079a15c94d1a7b0784eb3b59ec4936f8c0635ecdb58875c6809485cff814e01df170f02c18676cf782826795dc08553b98e69c1049
+  languageName: node
+  linkType: hard
+
+"@xml-tools/parser@npm:^1.0.2":
+  version: 1.0.10
+  resolution: "@xml-tools/parser@npm:1.0.10"
+  dependencies:
+    chevrotain: 7.1.1
+  checksum: b238e7e7dcc543d947dc9aab5d104fb6609254b163ce1416e5e1f07250cb47eded0286c61409c1f53c5828b93ed4b080d93c93167bea75b45ac9caa4c74461fc
   languageName: node
   linkType: hard
 
@@ -4446,6 +4465,15 @@ __metadata:
   version: 11.1.2
   resolution: "check-types@npm:11.1.2"
   checksum: e756b5a813d192216caad74f546a62a9b777fdc7b3b73cb0b73135fd4cdd43e8abcfe9793ac4df6ac3470aee9e79810278a1bef40d3fc31dc9cf9cfa6671eb18
+  languageName: node
+  linkType: hard
+
+"chevrotain@npm:7.1.1":
+  version: 7.1.1
+  resolution: "chevrotain@npm:7.1.1"
+  dependencies:
+    regexp-to-ast: 0.5.0
+  checksum: b942de3ed9d02d51e84ced5d873c1477e58acf46214aab2b86d1eeee81d9406ee4d87de9dc30240e3390543d7f978fe4f2befbd3ad3de993be291256137d1aee
   languageName: node
   linkType: hard
 
@@ -12331,7 +12359,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.2.1":
+"prettier@npm:>=1.10, prettier@npm:^2.2.1":
   version: 2.2.1
   resolution: "prettier@npm:2.2.1"
   bin:
@@ -12648,6 +12676,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "react-around-auth@workspace:."
   dependencies:
+    "@prettier/plugin-xml": ^0.13.1
     "@testing-library/dom": ^7.30.0
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.5
@@ -13052,6 +13081,13 @@ fsevents@^1.2.7:
   version: 2.2.11
   resolution: "regex-parser@npm:2.2.11"
   checksum: 434f82a8ce1e9065a5eaa233abcbde62ebfcc9b44478df99a4926ed7928317f6086c59afaf5306c6f0427095c775e498ee86c2ef59cdc5ba47f6a403266a2d1d
+  languageName: node
+  linkType: hard
+
+"regexp-to-ast@npm:0.5.0":
+  version: 0.5.0
+  resolution: "regexp-to-ast@npm:0.5.0"
+  checksum: 48c7c8dc0f5017ae232d4d7f626ec9a2033c649d7146284d8d74cae9b6e552b142bb215e589581dc860b8642b4e402d4952baa2a36a8911b73ed2521f667c452
   languageName: node
   linkType: hard
 
