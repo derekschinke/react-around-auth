@@ -14,12 +14,14 @@ function Login() {
           <input
             className="popup__input popup__input_type_account"
             placeholder="Email"
+            required
           ></input>
         </label>
         <label>
           <input
             className="popup__input popup__input_type_account"
             placeholder="Password"
+            required
           ></input>
         </label>
         <div className="popup__spacer"></div>

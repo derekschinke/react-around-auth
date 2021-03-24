@@ -34,8 +34,9 @@ function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddCardPopupOpen, setIsAddCardPopupOpen] = useState(false);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
+  // const [isInfoTooltipOpen, setIsInfoTooltipOpen] = useState(false);
 
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -170,7 +171,7 @@ function App() {
                       easing="ease"
                       label="Show menu"
                       toggled={isMenuOpen}
-                      toggle={setMenuOpen}
+                      toggle={setIsMenuOpen}
                     />
                   </div>
                   <div className="header__account">
