@@ -19,6 +19,7 @@ import EditAvatarPopup from './EditAvatarPopup';
 import AddCardPopup from './AddCardPopup';
 import Login from './Login';
 import Register from './Register';
+import InfoTooltip from './InfoTooltip';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -237,6 +238,7 @@ function App() {
 
                 <Register></Register>
               </div>
+              <InfoTooltip></InfoTooltip>
             </Route>
 
             <Route exact path="/signin">

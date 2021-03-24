@@ -1,6 +1,7 @@
 @import url(./__container/popup__container.css);
 @import url(./__container/_type/popup__container_type_image.css);
 @import url(./__title/popup__title.css);
+@import url(./__title/_type/popup__title_type_infotooltip.css);
 @import url(./__form/popup__form.css);
 @import url(./__form/_type/popup__form_type_delete.css);
 @import url(./__form/_type/popup__form_type_account.css);
@@ -13,6 +14,8 @@
 @import url(./__error/popup__error.css);
 @import url(./__button/popup__button.css);
 @import url(./__spacer/popup__spacer.css);
+@import url(./__infotooltip-image/_status/popup__infotooltip-image_status_oops.css);
+@import url(./__infotooltip-image/_status/popup__infotooltip-image_status_success.css);
 
 .popup {
   position: fixed;

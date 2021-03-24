@@ -1,0 +1,14 @@
+.popup__infotooltip-image_status_success {
+  width: 120px;
+  height: 120px;
+  background: url(../../../../images/infotooltip/success.svg);
+  margin: auto;
+  padding-bottom: 32px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 919px) {
+  .popup__infotooltip-image_status_success {
+    padding-bottom: 40px;
+  }
+}
