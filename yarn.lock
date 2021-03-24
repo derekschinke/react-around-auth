@@ -2332,14 +2332,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^13.0.10":
-  version: 13.0.10
-  resolution: "@testing-library/user-event@npm:13.0.10"
+"@testing-library/user-event@npm:^13.0.11":
+  version: 13.0.11
+  resolution: "@testing-library/user-event@npm:13.0.11"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: c8050970fbe80b72c973f55ab7935b857f1e8318795fd39a8c5c42236bccdd3ba4477fcb13ef9385975d8e82f8e24f71ae412c5b4b00048c0d8d71e18a21afdd
+  checksum: 6c97eadbc876d98781d84f9d1df8249486998e78baa41cfab60ebadfa4810fd08dab4bfad5a3e9c46293c5de649ea7f40692b4bdaa8404559bde1f562a5e3ef9
   languageName: node
   linkType: hard
 
@@ -6502,9 +6502,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.23.0":
-  version: 7.23.0
-  resolution: "eslint-plugin-react@npm:7.23.0"
+"eslint-plugin-react@npm:^7.23.1":
+  version: 7.23.1
+  resolution: "eslint-plugin-react@npm:7.23.1"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
@@ -6520,7 +6520,7 @@ __metadata:
     string.prototype.matchall: ^4.0.4
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: 6b3673dd202459ceb6a105f547daa211a74e02e7ce18ea3627b45a84deb50c1a4109262a854e8ea013fd3c2d5b1c1c2c7ea08dc5ba2756729452d91ac07f3df4
+  checksum: 1c9cfbe6f378d09c620d127c6f6e7708e0f482787a38dbd935b137c70ea65af8d648fda6b2755cd028ebed461628e230038146ab3b10eb9a76f02388ae554565
   languageName: node
   linkType: hard
 
@@ -12778,7 +12778,7 @@ fsevents@^1.2.7:
     "@testing-library/dom": ^7.30.0
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.5
-    "@testing-library/user-event": ^13.0.10
+    "@testing-library/user-event": ^13.0.11
     "@typescript-eslint/eslint-plugin": ^4.19.0
     "@typescript-eslint/parser": ^4.19.0
     babel-eslint: ^10.1.0
@@ -12792,7 +12792,7 @@ fsevents@^1.2.7:
     eslint-plugin-jest: ^24.3.2
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.3.1
-    eslint-plugin-react: ^7.23.0
+    eslint-plugin-react: ^7.23.1
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-testing-library: ^3.10.2
     gh-pages: ^3.1.0
