@@ -31,7 +31,7 @@ export const authorize = (email, password) => {
         localStorage.setItem('jwt', data.jwt);
         return data;
       }
-      return new Error('Something went wrong');
+      throw new Error('No token received from backend');
     })
     .catch((err) => {
       console.log(err);
