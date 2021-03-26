@@ -20,6 +20,7 @@ import AddCardPopup from './AddCardPopup';
 import Login from './Login';
 import Register from './Register';
 import InfoTooltip from './InfoTooltip';
+import ProtectedRoute from './ProtectedRoute';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -152,7 +153,7 @@ function App() {
       <Router>
         <div className="page">
           <Switch>
-            <Route exact path="/around">
+            <Route exact path="/">
               <div
                 className={`page__container page__container_around ${
                   isMenuOpen ? 'page__container_around_opened' : ''
@@ -182,8 +183,10 @@ function App() {
                   </div>
                 </Header>
 
-                <Main
+                <ProtectedRoute
+                  component={Main}
                   cards={cards}
+                  loggedIn={loggedIn}
                   onEditAvatar={handleEditAvatarClick}
                   onEditProfile={handleEditProfileClick}
                   onAddCard={handleAddPlaceClick}
@@ -257,10 +260,6 @@ function App() {
 
                 <Login></Login>
               </div>
-            </Route>
-
-            <Route exact path="/">
-              {loggedIn ? <Redirect to="/around" /> : <Redirect to="/signin" />}
             </Route>
 
             <Redirect from="*" to="/" />
