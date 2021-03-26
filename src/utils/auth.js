@@ -10,10 +10,10 @@ export const register = (email, password) => {
     },
     body: JSON.stringify({ email, password }),
   })
-    .then((res) => {
-      return res.json();
-    })
-    .catch((err) => console.log(err));
+    .then((res) => res.json())
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
 export const authorize = (email, password) => {
