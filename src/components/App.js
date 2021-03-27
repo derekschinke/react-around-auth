@@ -6,7 +6,6 @@ import {
   Route,
   Redirect,
   Link,
-  useHistory,
 } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
@@ -25,8 +24,6 @@ import InfoTooltip from './InfoTooltip';
 import ProtectedRoute from './ProtectedRoute';
 
 function App() {
-  const history = useHistory();
-
   const [loggedIn, setLoggedIn] = useState(false);
 
   const [userEmail, setUserEmail] = useState('');
@@ -145,7 +142,6 @@ function App() {
           setIsSuccess(true);
           setIsInfoTooltipOpen(true);
           setUserEmail(email);
-          history.push('/signin');
         }
       })
       .catch((err) => {
