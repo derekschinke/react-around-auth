@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PopupWithForm from './PopupWithForm';
 
-function Register() {
+function Register(props) {
   const history = useHistory();
 
   const [email, setEmail] = useState('');
@@ -16,7 +16,8 @@ function Register() {
   }
 
   function handleSubmit(e) {
-    e.PreventDefault();
+    e.preventDefault();
+    props.handleRegistration(email, password);
     if (localStorage.getItem('jwt')) {
       history.push('/');
     }
@@ -38,6 +39,7 @@ function Register() {
             required
             value={email}
             onChange={handleEmailChange}
+            type="email"
           ></input>
         </label>
         <label>
@@ -47,6 +49,7 @@ function Register() {
             required
             value={password}
             onChange={handlePasswordChange}
+            type="password"
           ></input>
         </label>
         <div className="popup__spacer"></div>

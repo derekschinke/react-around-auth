@@ -6,9 +6,11 @@ import {
   Route,
   Redirect,
   Link,
+  useHistory,
 } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
+import { register } from '../utils/auth';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import Header from './Header';
 import Main from './Main';
@@ -23,21 +25,26 @@ import InfoTooltip from './InfoTooltip';
 import ProtectedRoute from './ProtectedRoute';
 
 function App() {
+  const history = useHistory();
+
   const [loggedIn, setLoggedIn] = useState(false);
 
+  const [userEmail, setUserEmail] = useState('');
   const [currentUser, setCurrentUser] = useState({});
 
   const [cards, setCards] = useState([]);
 
   const [selectedCard, setSelectedCard] = useState({ link: '', name: '' });
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddCardPopupOpen, setIsAddCardPopupOpen] = useState(false);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
-  // const [isInfoTooltipOpen, setIsInfoTooltipOpen] = useState(false);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isInfoTooltipOpen, setIsInfoTooltipOpen] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -88,6 +95,7 @@ function App() {
     setIsEditProfilePopupOpen(false);
     setIsAddCardPopupOpen(false);
     setIsImagePopupOpen(false);
+    setIsInfoTooltipOpen(false);
   }
 
   function handleUpdateUser({ name, about }) {
@@ -120,6 +128,25 @@ function App() {
       .then((newCard) => {
         setCards([newCard, ...cards]);
         closeAllPopups();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  function handleRegistration(email, password) {
+    register(email, password)
+      .then((res) => {
+        if (res.error) {
+          setIsSuccess(false);
+          setIsInfoTooltipOpen(true);
+          throw new Error(res.error);
+        } else {
+          setIsSuccess(true);
+          setIsInfoTooltipOpen(true);
+          setUserEmail(email);
+          history.push('/signin');
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -176,7 +203,7 @@ function App() {
                     />
                   </div>
                   <div className="header__account">
-                    <p className="header__user-email">email@mail.com</p>
+                    <p className="header__user-email">{userEmail}</p>
                     <Link to="/signin" className="header__log-out button">
                       Log out
                     </Link>
@@ -240,9 +267,13 @@ function App() {
                   </Link>
                 </Header>
 
-                <Register></Register>
+                <Register handleRegistration={handleRegistration}></Register>
               </div>
-              <InfoTooltip></InfoTooltip>
+              <InfoTooltip
+                isOpen={isInfoTooltipOpen}
+                isSuccess={isSuccess}
+                onClose={closeAllPopups}
+              ></InfoTooltip>
             </Route>
 
             <Route exact path="/signin">
