@@ -164,6 +164,8 @@ function App() {
     history.push('/signin');
   }
 
+  function handleCheckToken() {}
+
   useEffect(() => {
     api
       .getUserInfo()
@@ -184,6 +186,10 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
+  }, []);
+
+  useEffect(() => {
+    handleCheckToken();
   }, []);
 
   return (
@@ -282,7 +288,12 @@ function App() {
             <InfoTooltip
               isOpen={isInfoTooltipOpen}
               isSuccess={isSuccess}
-              onClose={closeAllPopups}
+              onClose={() => {
+                closeAllPopups();
+                if (isSuccess) {
+                  history.push('/signin');
+                }
+              }}
             ></InfoTooltip>
           </Route>
 

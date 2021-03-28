@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PopupWithForm from './PopupWithForm';
 
 function Register(props) {
-  const history = useHistory();
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,9 +16,6 @@ function Register(props) {
   function handleSubmit(e) {
     e.preventDefault();
     props.handleRegistration(email, password);
-    if (localStorage.getItem('jwt')) {
-      history.push('/');
-    }
   }
 
   return (
