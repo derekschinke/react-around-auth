@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# Project 14: Around The U.S. React with Authorization
+
+## [Web Developer from Practicum by Yandex](https://practicum.yandex.com/web/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Overview
+
+This project is part of the **Back-End Basics for Web Developers** sprint for the Web Developer course at Practicum by Yandex.
+
+### Technologies Used
+
+HTML, CSS, JS, and JSX technologies it demonstrates are:
+
+- React
+
+  - Hooks
+  - Contexts
+
+- React Router
+- Yarn 2, [Zero-Installs](https://yarnpkg.com/features/zero-installs), PnP
+- flexbox
+- <abbr title="Block, Element, Modifier">BEM</abbr> methodology
+- media queries for responsiveness
+- <abbr title="application programming interface">API</abbr> calls and asynchronous functions
+- account registration and authorization
+
+The website can be accessed [here](https://derekschinke-practicum.github.io/react-around-auth/).
+
+###### [Yandex.Practicum](https://practicum.yandex.com/) | [Яндекс.Практикум](https://praktikum.yandex.ru/)
 
 ## Available Scripts
 
