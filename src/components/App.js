@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
-import { Switch, Route, Redirect, Link, useHistory } from 'react-router-dom';
+import { Link, Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
-import { authorize, register } from '../utils/auth';
+import { authorize, checkToken, register } from '../utils/auth';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import Header from './Header';
 import Main from './Main';
@@ -164,7 +164,22 @@ function App() {
     history.push('/signin');
   }
 
-  function handleCheckToken() {}
+  function handleCheckToken() {
+    const token = localStorage.getItem('token');
+    if (token !== 'undefined') {
+      checkToken(token)
+        .then((res) => {
+          setUserEmail(res.data.email);
+          setLoggedIn(true);
+          history.push('/');
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      setLoggedIn(false);
+    }
+  }
 
   useEffect(() => {
     api
@@ -175,9 +190,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
 
-  useEffect(() => {
     api
       .getInitialCards()
       .then((initialCards) => {
@@ -188,9 +201,7 @@ function App() {
       });
   }, []);
 
-  useEffect(() => {
-    handleCheckToken();
-  }, []);
+  useEffect(handleCheckToken, [history]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>

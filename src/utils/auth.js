@@ -28,10 +28,10 @@ export const authorize = (email, password) => {
     .then((res) => res.json())
     .then((data) => {
       if (data.token) {
-        localStorage.setItem('jwt', data.jwt);
+        localStorage.setItem('token', data.token);
         return data;
       }
-      throw new Error('No token received from backend');
+      throw new Error('No token received');
     })
     .catch((err) => {
       console.log(err);
