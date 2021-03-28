@@ -1,0 +1,16 @@
+.header_type_around {
+  padding-top: 45px;
+  margin: 0 auto;
+  height: 74px;
+  border-bottom: 1px solid #545454;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 919px) {
+  .header_type_around {
+    padding-top: 40px;
+    height: 187px;
+    flex-direction: column-reverse;
+  }
+}

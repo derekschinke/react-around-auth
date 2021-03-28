@@ -1,0 +1,22 @@
+.account__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  text-decoration: none;
+  /* padding-top: 5px; */
+  padding-bottom: 80px;
+}
+
+.account__link:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 919px) {
+  .account__link {
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 42px;
+  }
+}

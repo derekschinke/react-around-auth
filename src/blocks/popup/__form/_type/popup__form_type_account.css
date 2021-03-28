@@ -1,0 +1,14 @@
+.popup__form_type_account {
+  transform: translateY(0);
+  height: calc(100vh - 326px);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 919px) {
+  .popup__form_type_account {
+    transform: translateY(0);
+    height: calc(100vh - 242px);
+    width: 260px;
+  }
+}
