@@ -162,6 +162,7 @@ function App() {
     setLoggedIn(false);
     setIsMenuOpen(false);
     history.push('/signin');
+    setUserEmail('');
   }
 
   function handleCheckToken() {
@@ -178,6 +179,13 @@ function App() {
         });
     } else {
       setLoggedIn(false);
+    }
+  }
+
+  function handleCloseRegistrationInfoTooltip() {
+    closeAllPopups();
+    if (isSuccess) {
+      history.push('/signin');
     }
   }
 
@@ -299,12 +307,7 @@ function App() {
             <InfoTooltip
               isOpen={isInfoTooltipOpen}
               isSuccess={isSuccess}
-              onClose={() => {
-                closeAllPopups();
-                if (isSuccess) {
-                  history.push('/signin');
-                }
-              }}
+              onClose={handleCloseRegistrationInfoTooltip}
             ></InfoTooltip>
           </Route>
 
