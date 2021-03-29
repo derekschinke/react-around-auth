@@ -48,9 +48,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "preanalyze": "yarn build",
+    "preanalyze": "yarn run build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "postinstall": "husky install"
   },
