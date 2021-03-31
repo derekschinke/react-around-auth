@@ -2303,9 +2303,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.30.1":
-  version: 7.30.1
-  resolution: "@testing-library/dom@npm:7.30.1"
+"@testing-library/dom@npm:^7.30.2":
+  version: 7.30.2
+  resolution: "@testing-library/dom@npm:7.30.2"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
@@ -2315,7 +2315,7 @@ __metadata:
     dom-accessibility-api: ^0.5.4
     lz-string: ^1.4.4
     pretty-format: ^26.6.2
-  checksum: a886bdb20955e5f029fa10932184128dd701dac866dc8016e66f339d89ab5b63185c3584ea5eb2a5ffbcb779bad6952f1f0933cc47f6772450211cd85b55861e
+  checksum: 41d3d974aaeb725d184db344319baf17bc48b339fb751f6d592eb1c8c7a859c1e1c1b1943bdac97ea3ab5083b818c03b6b0372eb6441ca001177e1bf8491bbac
   languageName: node
   linkType: hard
 
@@ -2335,27 +2335,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^11.2.5":
-  version: 11.2.5
-  resolution: "@testing-library/react@npm:11.2.5"
+"@testing-library/react@npm:^11.2.6":
+  version: 11.2.6
+  resolution: "@testing-library/react@npm:11.2.6"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@testing-library/dom": ^7.28.1
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 1389b4eb110ad32ac328634846fd92570979c0cb739a3ee99eeb2278860a1910a81126612457379fc306dbd6417b4b5ff1ddd88ede3d8ebb1da3972e70877e83
+  checksum: 3ad25d7b88650b83d54990665fabac4f75ff8229773ae877c18ec7a431c17773832d4c3279cecc229815660ffc8be2c86f39de9930777b4dbc1519fb7bca63a5
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^13.0.16":
-  version: 13.0.16
-  resolution: "@testing-library/user-event@npm:13.0.16"
+"@testing-library/user-event@npm:^13.1.1":
+  version: 13.1.1
+  resolution: "@testing-library/user-event@npm:13.1.1"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: cc1913ae0d5c456e01914cffb755b6782165a75d24d0d88ec6a0df67509674aa33b816f74c2e3e8165bfb207f4d5009cae85fb3771763c86f83c9dcd37525b4c
+  checksum: 7cd88f188058bc01d73c72c07cab16cdb6da2413268e31ffb5ec1add7bad6c591caa5f9f4aeb0196c7e54b0727b1e93ee85b806fbfa5b0900e88f17eb6238ce7
   languageName: node
   linkType: hard
 
@@ -12838,10 +12838,10 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "react-around-auth@workspace:."
   dependencies:
-    "@testing-library/dom": ^7.30.1
+    "@testing-library/dom": ^7.30.2
     "@testing-library/jest-dom": ^5.11.10
-    "@testing-library/react": ^11.2.5
-    "@testing-library/user-event": ^13.0.16
+    "@testing-library/react": ^11.2.6
+    "@testing-library/user-event": ^13.1.1
     "@typescript-eslint/eslint-plugin": ^4.20.0
     "@typescript-eslint/parser": ^4.20.0
     babel-eslint: ^10.1.0
@@ -12866,7 +12866,7 @@ fsevents@^1.2.7:
     prettier: ^2.2.1
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-refresh: ^0.9.0
+    react-refresh: ^0.10.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
     source-map-explorer: ^2.5.2
@@ -12940,17 +12940,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-refresh@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "react-refresh@npm:0.10.0"
+  checksum: 09a59d2732d8f2e9df3f59670146a507ea027f6b35a18b5a2116919f18ef056cfcc0455bed2f6b916ac154e4af78e3c57748cfbf9383930729624f7b8c672b91
+  languageName: node
+  linkType: hard
+
 "react-refresh@npm:^0.8.3":
   version: 0.8.3
   resolution: "react-refresh@npm:0.8.3"
   checksum: 38f06df8e0a20701b96e5d680838a3528d66cfb53db79843d30cb9517df3262ec596607147439975267bf0634bee77101db37298ea79b5742cc28664632f3c76
-  languageName: node
-  linkType: hard
-
-"react-refresh@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "react-refresh@npm:0.9.0"
-  checksum: 300dc431389f4c532bdfec08d5bc59b591c8c440486a7d5770c8954adf3afe62501b659c5acbdb7831751e8be506eb90a6f72491fab40352f3b3fba16897acf6
   languageName: node
   linkType: hard
 
