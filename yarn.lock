@@ -2303,9 +2303,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.30.2":
-  version: 7.30.2
-  resolution: "@testing-library/dom@npm:7.30.2"
+"@testing-library/dom@npm:^7.30.3":
+  version: 7.30.3
+  resolution: "@testing-library/dom@npm:7.30.3"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
@@ -2315,7 +2315,7 @@ __metadata:
     dom-accessibility-api: ^0.5.4
     lz-string: ^1.4.4
     pretty-format: ^26.6.2
-  checksum: 41d3d974aaeb725d184db344319baf17bc48b339fb751f6d592eb1c8c7a859c1e1c1b1943bdac97ea3ab5083b818c03b6b0372eb6441ca001177e1bf8491bbac
+  checksum: 3d5ac838646e622ef10a6cdd496591a17f803df9f9acd67c81168b14092cf510b68bfc7bd188a971fe65bc18b1c259bdaac9db9ee01549ff94b1efefd8f640a1
   languageName: node
   linkType: hard
 
@@ -12838,7 +12838,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "react-around-auth@workspace:."
   dependencies:
-    "@testing-library/dom": ^7.30.2
+    "@testing-library/dom": ^7.30.3
     "@testing-library/jest-dom": ^5.11.10
     "@testing-library/react": ^11.2.6
     "@testing-library/user-event": ^13.1.1
