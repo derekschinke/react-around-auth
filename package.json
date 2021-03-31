@@ -49,9 +49,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "yarn run predeploy && gh-pages -d build",
     "preanalyze": "yarn run build",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "analyze": "yarn run preanalyze && source-map-explorer 'build/static/js/*.js'",
     "postinstall": "husky install"
   },
   "eslintConfig": {
