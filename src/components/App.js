@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
-import { Link, Redirect, Route, Switch, useHistory } from 'react-router-dom';
+import { Link, Redirect, Route, useHistory } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
 import api from '../utils/api';
 import { authorize, checkToken, register } from '../utils/auth';
@@ -214,127 +214,127 @@ function App() {
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
-        <Switch>
-          <Route exact path="/">
-            <div
-              className={`page__container page__container_around ${
-                isMenuOpen ? 'page__container_around_opened' : ''
-              }`}
-            >
-              <Header headerStyle="header_type_around">
-                <div className="header__logo-and-hamburger">
-                  <div
-                    role="img"
-                    aria-label="Around The U.S."
-                    className="header__logo header__logo_around"
-                  ></div>
-                  <Hamburger
-                    size={24}
-                    color="#fff"
-                    easing="ease"
-                    label="Show menu"
-                    toggled={isMenuOpen}
-                    toggle={setIsMenuOpen}
-                  />
-                </div>
-                <div className="header__account">
-                  <p className="header__user-email">{userEmail}</p>
-                  <p className="header__log-out button" onClick={handleSignOut}>
-                    Log out
-                  </p>
-                </div>
-              </Header>
-
-              <ProtectedRoute
-                component={Main}
-                cards={cards}
-                loggedIn={loggedIn}
-                onEditAvatar={handleEditAvatarClick}
-                onEditProfile={handleEditProfileClick}
-                onAddCard={handleAddPlaceClick}
-                onCardClick={(card) => {
-                  handleCardClick(card);
-                }}
-                onCardLike={(card) => {
-                  handleCardLike(card);
-                }}
-                onCardDelete={(card) => {
-                  handleCardDelete(card);
-                }}
-              />
-              <Footer />
-            </div>
-            <EditProfilePopup
-              isOpen={isEditProfilePopupOpen}
-              onClose={closeAllPopups}
-              onUpdateUser={handleUpdateUser}
-            />
-
-            <EditAvatarPopup
-              isOpen={isEditAvatarPopupOpen}
-              onClose={closeAllPopups}
-              onUpdateAvatar={handleUpdateAvatar}
-            />
-
-            <AddCardPopup
-              isOpen={isAddCardPopupOpen}
-              onClose={closeAllPopups}
-              onAddCard={handleAddCard}
-            />
-
-            <PopupWithImage
-              card={selectedCard}
-              isOpen={isImagePopupOpen}
-              onClose={closeAllPopups}
-            />
-          </Route>
-
-          <Route exact path="/signup">
-            <div className="page__container">
-              <Header headerStyle="header">
+        {/* <Switch> */}
+        <Route exact path="/">
+          <div
+            className={`page__container page__container_around ${
+              isMenuOpen ? 'page__container_around_opened' : ''
+            }`}
+          >
+            <Header headerStyle="header_type_around">
+              <div className="header__logo-and-hamburger">
                 <div
                   role="img"
                   aria-label="Around The U.S."
-                  className="header__logo"
+                  className="header__logo header__logo_around"
                 ></div>
-                <Link to="/signin" className="header__link button">
-                  Log in
-                </Link>
-              </Header>
+                <Hamburger
+                  size={24}
+                  color="#fff"
+                  easing="ease"
+                  label="Show menu"
+                  toggled={isMenuOpen}
+                  toggle={setIsMenuOpen}
+                />
+              </div>
+              <div className="header__account">
+                <p className="header__user-email">{userEmail}</p>
+                <p className="header__log-out button" onClick={handleSignOut}>
+                  Log out
+                </p>
+              </div>
+            </Header>
 
-              <Register handleRegistration={handleRegistration}></Register>
-            </div>
-            <InfoTooltip
-              isOpen={isInfoTooltipOpen}
-              isSuccess={isSuccess}
-              onClose={handleCloseRegistrationInfoTooltip}
-            ></InfoTooltip>
-          </Route>
+            <ProtectedRoute
+              component={Main}
+              cards={cards}
+              loggedIn={loggedIn}
+              onEditAvatar={handleEditAvatarClick}
+              onEditProfile={handleEditProfileClick}
+              onAddCard={handleAddPlaceClick}
+              onCardClick={(card) => {
+                handleCardClick(card);
+              }}
+              onCardLike={(card) => {
+                handleCardLike(card);
+              }}
+              onCardDelete={(card) => {
+                handleCardDelete(card);
+              }}
+            />
+            <Footer />
+          </div>
+          <EditProfilePopup
+            isOpen={isEditProfilePopupOpen}
+            onClose={closeAllPopups}
+            onUpdateUser={handleUpdateUser}
+          />
 
-          <Route exact path="/signin">
-            <div className="page__container">
-              <Header headerStyle="header">
-                <div
-                  role="img"
-                  aria-label="Around The U.S."
-                  className="header__logo"
-                ></div>
-                <Link to="/signup" className="header__link button">
-                  Sign up
-                </Link>
-              </Header>
+          <EditAvatarPopup
+            isOpen={isEditAvatarPopupOpen}
+            onClose={closeAllPopups}
+            onUpdateAvatar={handleUpdateAvatar}
+          />
 
-              <Login handleLogin={handleLogin}></Login>
-            </div>
-            <InfoTooltip
-              isOpen={isInfoTooltipOpen}
-              isSuccess={isSuccess}
-              onClose={closeAllPopups}
-            ></InfoTooltip>
-          </Route>
+          <AddCardPopup
+            isOpen={isAddCardPopupOpen}
+            onClose={closeAllPopups}
+            onAddCard={handleAddCard}
+          />
 
-          <Redirect from="*" to="/" />
-        </Switch>
+          <PopupWithImage
+            card={selectedCard}
+            isOpen={isImagePopupOpen}
+            onClose={closeAllPopups}
+          />
+        </Route>
+
+        <Route exact path="/signup">
+          <div className="page__container">
+            <Header headerStyle="header">
+              <div
+                role="img"
+                aria-label="Around The U.S."
+                className="header__logo"
+              ></div>
+              <Link to="/signin" className="header__link button">
+                Log in
+              </Link>
+            </Header>
+
+            <Register handleRegistration={handleRegistration}></Register>
+          </div>
+          <InfoTooltip
+            isOpen={isInfoTooltipOpen}
+            isSuccess={isSuccess}
+            onClose={handleCloseRegistrationInfoTooltip}
+          ></InfoTooltip>
+        </Route>
+
+        <Route exact path="/signin">
+          <div className="page__container">
+            <Header headerStyle="header">
+              <div
+                role="img"
+                aria-label="Around The U.S."
+                className="header__logo"
+              ></div>
+              <Link to="/signup" className="header__link button">
+                Sign up
+              </Link>
+            </Header>
+
+            <Login handleLogin={handleLogin}></Login>
+          </div>
+          <InfoTooltip
+            isOpen={isInfoTooltipOpen}
+            isSuccess={isSuccess}
+            onClose={closeAllPopups}
+          ></InfoTooltip>
+        </Route>
+
+        <Redirect from="*" to="/" />
+        {/* </Switch> */}
       </div>
     </CurrentUserContext.Provider>
   );
