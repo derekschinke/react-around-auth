@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import 'normalize.css';
 import './index.css';
 import App from './components/App';
@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/">
       <App />
     </Router>
   </StrictMode>,
