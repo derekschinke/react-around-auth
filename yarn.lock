@@ -2711,7 +2711,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:4.21.0":
+"@typescript-eslint/experimental-utils@npm:4.21.0, @typescript-eslint/experimental-utils@npm:^4.21.0":
   version: 4.21.0
   resolution: "@typescript-eslint/experimental-utils@npm:4.21.0"
   dependencies:
@@ -6567,17 +6567,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^3.10.2":
-  version: 3.10.2
-  resolution: "eslint-plugin-testing-library@npm:3.10.2"
-  dependencies:
-    "@typescript-eslint/experimental-utils": ^3.10.1
-  peerDependencies:
-    eslint: ^5 || ^6 || ^7
-  checksum: 2a9eb8f44fa91d052b1f344918cd7a4346c8ec5ea99ee0c3b585def7d5e837200c59c2e0aa99d654365891bdd7084211c723d9e592cfb331d315fba8af1fb186
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-testing-library@npm:^3.9.2":
   version: 3.10.1
   resolution: "eslint-plugin-testing-library@npm:3.10.1"
@@ -6586,6 +6575,17 @@ __metadata:
   peerDependencies:
     eslint: ^5 || ^6 || ^7
   checksum: 32f96d4a8a90cd9f871321bf3bd9cfdcb85f8581298355e8fa6c7fd080308a961a8fdcf78c43b8482e3e5fb369664d990d733c131f0281e2757a7c33d3a5ba95
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-testing-library@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "eslint-plugin-testing-library@npm:4.0.0"
+  dependencies:
+    "@typescript-eslint/experimental-utils": ^4.21.0
+  peerDependencies:
+    eslint: ^7.5.0
+  checksum: 2ac0b257ee060c6f56b484b42f99167011cd87fe74bf24f1d17c8eff14c99fa193f20511a1ae273d19f4a1e708af251372adc92c4158f661b2fcf1bc17dec3a8
   languageName: node
   linkType: hard
 
@@ -12884,7 +12884,7 @@ fsevents@^1.2.7:
     eslint-plugin-prettier: ^3.3.1
     eslint-plugin-react: ^7.23.2
     eslint-plugin-react-hooks: ^4.2.0
-    eslint-plugin-testing-library: ^3.10.2
+    eslint-plugin-testing-library: ^4.0.0
     gh-pages: ^3.1.0
     hamburger-react: ^2.4.0
     husky: ^6.0.0
