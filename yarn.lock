@@ -9498,8 +9498,8 @@ fsevents@^1.2.7:
   linkType: hard
 
 "listr2@npm:^3.2.2":
-  version: 3.6.2
-  resolution: "listr2@npm:3.6.2"
+  version: 3.6.3
+  resolution: "listr2@npm:3.6.3"
   dependencies:
     chalk: ^4.1.0
     cli-truncate: ^2.1.0
@@ -9512,7 +9512,7 @@ fsevents@^1.2.7:
     wrap-ansi: ^7.0.0
   peerDependencies:
     enquirer: ">= 2.3.0 < 3"
-  checksum: 63d653e6321d5a533bb21acdf5227d09536da23f84719ad22915dc9ee426f81bb603724238bebaee8b1197d3bdf5d282c9dba1cdf4bcb4ef3d61d31b22e9a847
+  checksum: 3ed48cb020ba487d937a8a6a5e91401934062d23cd07e571f8a9b1513c3efe45421b99d96e75b2f09740e3d0ac79c80a272ea54002744088e11d2872e3dbcf53
   languageName: node
   linkType: hard
 
