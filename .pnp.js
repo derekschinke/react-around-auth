@@ -9240,7 +9240,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-negative-zero", "npm:2.0.1"],
             ["is-regex", "npm:1.1.2"],
             ["is-string", "npm:1.0.5"],
-            ["object-inspect", "npm:1.9.0"],
+            ["object-inspect", "npm:1.10.1"],
             ["object-keys", "npm:1.1.1"],
             ["object.assign", "npm:4.1.2"],
             ["string.prototype.trimend", "npm:1.0.4"],
@@ -14625,10 +14625,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["object-inspect", [
-        ["npm:1.9.0", {
-          "packageLocation": "./.yarn/cache/object-inspect-npm-1.9.0-75d8ab6cd7-63b412167d.zip/node_modules/object-inspect/",
+        ["npm:1.10.1", {
+          "packageLocation": "./.yarn/cache/object-inspect-npm-1.10.1-22b6334cef-0f82fc5129.zip/node_modules/object-inspect/",
           "packageDependencies": [
-            ["object-inspect", "npm:1.9.0"]
+            ["object-inspect", "npm:1.10.1"]
           ],
           "linkType": "HARD",
         }]
@@ -18174,7 +18174,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["side-channel", "npm:1.0.4"],
             ["call-bind", "npm:1.0.2"],
             ["get-intrinsic", "npm:1.1.1"],
-            ["object-inspect", "npm:1.9.0"]
+            ["object-inspect", "npm:1.10.1"]
           ],
           "linkType": "HARD",
         }]
