@@ -111,6 +111,6 @@ class Api {
   }
 }
 
-const api = new Api({ baseUrl: 'http://localhost:3001' });
+const api = new Api({ baseUrl: 'https://nameless-atoll-39774.herokuapp.com' });
 
 export default api;
