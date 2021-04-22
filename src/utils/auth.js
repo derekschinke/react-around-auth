@@ -1,5 +1,7 @@
 /* eslint-disable no-console */
-const BASE_URL = 'https://nameless-atoll-39774.herokuapp.com';
+import config from './constants';
+
+const BASE_URL = config.url.API_URL;
 
 export const register = (email, password) => {
   return fetch(`${BASE_URL}/signup`, {

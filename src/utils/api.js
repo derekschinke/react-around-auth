@@ -1,3 +1,5 @@
+import config from './constants';
+
 class Api {
   constructor(options) {
     this.baseUrl = options.baseUrl;
@@ -111,6 +113,6 @@ class Api {
   }
 }
 
-const api = new Api({ baseUrl: 'https://nameless-atoll-39774.herokuapp.com' });
+const api = new Api({ baseUrl: config.url.API_URL });
 
 export default api;
