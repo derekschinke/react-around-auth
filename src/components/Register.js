@@ -45,6 +45,7 @@ function Register(props) {
             value={password}
             onChange={handlePasswordChange}
             type="password"
+            minLength="8"
           ></input>
         </label>
         <div className="popup__spacer"></div>

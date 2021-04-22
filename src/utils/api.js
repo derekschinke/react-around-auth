@@ -1,99 +1,116 @@
 class Api {
   constructor(options) {
     this.baseUrl = options.baseUrl;
-    this.headers = options.headers;
   }
 
-  getInitialCardsAndUserInfo() {
-    return Promise.all([this.getInitialCards(), this.getUserInfo()]);
-  }
-
-  async getUserInfo() {
-    const res = await fetch(`${this.baseUrl}/users/me`, {
-      headers: this.headers,
+  getUserInfo(token) {
+    return fetch(`${this.baseUrl}/users/me`, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 
-  async getInitialCards() {
-    const res = await fetch(`${this.baseUrl}/cards`, {
-      headers: this.headers,
+  getInitialCards(token) {
+    return fetch(`${this.baseUrl}/cards`, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 
-  async updateCardLikes(cardId, isLiked) {
+  updateCardLikes(cardId, isLiked, token) {
     const method = isLiked ? 'DELETE' : 'PUT';
-    const res = await fetch(`${this.baseUrl}/cards/likes/${cardId}`, {
-      headers: this.headers,
+    return fetch(`${this.baseUrl}/cards/likes/${cardId}`, {
       method,
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 
-  async deleteCard(cardId) {
-    const res = await fetch(`${this.baseUrl}/cards/${cardId}`, {
-      headers: this.headers,
+  deleteCard(cardId, token) {
+    return fetch(`${this.baseUrl}/cards/${cardId}`, {
       method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 
-  async postCard({ title, link }) {
-    const res = await fetch(`${this.baseUrl}/cards`, {
-      headers: this.headers,
+  postCard({ title, link }, token) {
+    return fetch(`${this.baseUrl}/cards`, {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
       body: JSON.stringify({ name: title, link }),
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 
-  async patchAvatarImage(url) {
-    const res = await fetch(`${this.baseUrl}/users/me/avatar`, {
-      headers: this.headers,
+  patchAvatarImage(url, token) {
+    return fetch(`${this.baseUrl}/users/me/avatar`, {
       method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
       body: JSON.stringify({ avatar: url }),
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 
-  async patchUserInfo(info) {
-    const res = await fetch(`${this.baseUrl}/users/me`, {
-      headers: this.headers,
+  patchUserInfo(info, token) {
+    return fetch(`${this.baseUrl}/users/me`, {
       method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
       body: JSON.stringify({ name: info.name, about: info.about }),
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error(`Error: ${res.status}`);
     });
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Error: ${res.status}`));
   }
 }
 
-const api = new Api({
-  baseUrl: 'https://around.nomoreparties.co/v1/group-5',
-  headers: {
-    authorization: '8cd049ee-8ebb-4e3d-8437-51e87560cee5',
-    'Content-Type': 'application/json',
-  },
-});
+const api = new Api({ baseUrl: 'http://localhost:3001' });
 
 export default api;

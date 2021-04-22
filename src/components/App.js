@@ -39,6 +39,8 @@ function App() {
   const [isInfoTooltipOpen, setIsInfoTooltipOpen] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
+  const [token, setToken] = useState(localStorage.getItem('token'));
+
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
   }
@@ -54,9 +56,9 @@ function App() {
     setIsImagePopupOpen(true);
   }
   function handleCardLike(card) {
-    const isLiked = card.likes.some((i) => i._id === currentUser._id);
+    const isLiked = card.likes.some((i) => i === currentUser._id);
     api
-      .updateCardLikes(card._id, isLiked)
+      .updateCardLikes(card._id, isLiked, token)
       .then((newCard) => {
         const newCards = cards.map((c) => (c._id === card._id ? newCard : c));
         setCards(newCards);
@@ -67,7 +69,7 @@ function App() {
   }
   function handleCardDelete(card) {
     api
-      .deleteCard(card._id)
+      .deleteCard(card._id, token)
       .then(() => {
         const newCards = cards.filter((c) => c._id !== card._id);
         setCards(newCards);
@@ -87,9 +89,9 @@ function App() {
 
   function handleUpdateUser({ name, about }) {
     api
-      .patchUserInfo({ name, about })
+      .patchUserInfo({ name, about }, token)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch((err) => {
@@ -99,9 +101,9 @@ function App() {
 
   function handleUpdateAvatar({ avatar }) {
     api
-      .patchAvatarImage(avatar.current.value)
+      .patchAvatarImage(avatar.current.value, token)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch((err) => {
@@ -111,7 +113,7 @@ function App() {
 
   function handleAddCard({ title, link }) {
     api
-      .postCard({ title, link })
+      .postCard({ title, link }, token)
       .then((newCard) => {
         setCards([newCard, ...cards]);
         closeAllPopups();
@@ -124,14 +126,14 @@ function App() {
   function handleRegistration(email, password) {
     register(email, password)
       .then((res) => {
-        if (res.error) {
-          setIsSuccess(false);
-          setIsInfoTooltipOpen(true);
-          throw new Error(res.error);
-        } else {
+        if (res) {
           setIsSuccess(true);
           setIsInfoTooltipOpen(true);
           setUserEmail(email);
+        } else {
+          setIsSuccess(false);
+          setIsInfoTooltipOpen(true);
+          throw new Error(res.error);
         }
       })
       .catch((err) => {
@@ -142,14 +144,15 @@ function App() {
   function handleLogin(email, password) {
     authorize(email, password)
       .then((res) => {
-        if (!res) {
+        if (res) {
+          setUserEmail(email);
+          setLoggedIn(true);
+          setToken(res.token);
+          history.push('/');
+        } else {
           setIsSuccess(false);
           setIsInfoTooltipOpen(true);
           throw new Error('No token received from backend');
-        } else {
-          setUserEmail(email);
-          setLoggedIn(true);
-          history.push('/');
         }
       })
       .catch((err) => {
@@ -163,10 +166,10 @@ function App() {
     setIsMenuOpen(false);
     history.push('/signin');
     setUserEmail('');
+    setCurrentUser({});
   }
 
   function handleCheckToken() {
-    const token = localStorage.getItem('token');
     if (token !== 'undefined') {
       checkToken(token)
         .then((res) => {
@@ -191,25 +194,25 @@ function App() {
 
   useEffect(() => {
     api
-      .getUserInfo()
+      .getUserInfo(token)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
 
     api
-      .getInitialCards()
-      .then((initialCards) => {
-        setCards(initialCards);
+      .getInitialCards(token)
+      .then((res) => {
+        setCards(res.data.reverse());
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [token]);
 
-  useEffect(handleCheckToken, [history]);
+  useEffect(handleCheckToken, [history, token]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
