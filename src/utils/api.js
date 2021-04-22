@@ -63,7 +63,7 @@ class Api {
   }
 
   postCard({ title, link }, token) {
-    fetch(`${this.baseUrl}/cards`, {
+    return fetch(`${this.baseUrl}/cards`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
