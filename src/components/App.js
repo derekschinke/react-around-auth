@@ -166,6 +166,7 @@ function App() {
     setIsMenuOpen(false);
     history.push('/signin');
     setUserEmail('');
+    setCurrentUser({});
   }
 
   function handleCheckToken() {
