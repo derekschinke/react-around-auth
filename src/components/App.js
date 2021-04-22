@@ -56,7 +56,7 @@ function App() {
     setIsImagePopupOpen(true);
   }
   function handleCardLike(card) {
-    const isLiked = card.likes.some((i) => i._id === currentUser._id);
+    const isLiked = card.likes.some((i) => i === currentUser._id);
     api
       .updateCardLikes(card._id, isLiked, token)
       .then((newCard) => {
