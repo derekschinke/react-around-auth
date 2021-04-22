@@ -4,7 +4,7 @@ class Api {
   }
 
   getUserInfo(token) {
-    return fetch(`${this.baseUrl}/users`, {
+    return fetch(`${this.baseUrl}/users/me`, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,

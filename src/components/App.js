@@ -91,7 +91,7 @@ function App() {
     api
       .patchUserInfo({ name, about }, token)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch((err) => {
@@ -103,7 +103,7 @@ function App() {
     api
       .patchAvatarImage(avatar.current.value, token)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch((err) => {
@@ -195,7 +195,7 @@ function App() {
     api
       .getUserInfo(token)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
       })
       .catch((err) => {
         console.log(err);
@@ -203,8 +203,8 @@ function App() {
 
     api
       .getInitialCards(token)
-      .then((initialCards) => {
-        setCards(initialCards);
+      .then((res) => {
+        setCards(res.data);
       })
       .catch((err) => {
         console.log(err);

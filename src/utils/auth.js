@@ -34,7 +34,7 @@ export const authorize = (email, password) => {
       if (res.ok) {
         return res.json();
       }
-      throw new Error('Registration failed');
+      throw new Error('Authorization failed');
     })
     .then((data) => {
       if (data.token) {
@@ -57,7 +57,12 @@ export const checkToken = (token) => {
       Authorization: `Bearer ${token}`,
     },
   })
-    .then((res) => res.json())
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error('Authorization failed');
+    })
     .then((data) => data)
     .catch((err) => {
       console.log(err);
