@@ -25,7 +25,7 @@ HTML, CSS, JS, and JSX technologies it demonstrates are:
 - <abbr title="application programming interface">API</abbr> calls and asynchronous functions
 - account registration and authorization
 
-The website can be accessed [here](https://derekschinke-practicum.github.io/react-around-auth/).
+The website can be accessed [here](https://derekschinke.github.io/react-around-auth/).
 
 ###### [Yandex.Practicum](https://practicum.yandex.com/) | [Яндекс.Практикум](https://praktikum.yandex.ru/)
 
