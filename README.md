@@ -12,6 +12,9 @@ This project is part of the **Back-End Basics for Web Developers** sprint for th
 
 HTML, CSS, JS, and JSX technologies it demonstrates are:
 
+- Mongoose with MongoDB Atlas
+- RESTful API with Express with Heroku
+- Netlify
 - React
 
   - Hooks
@@ -25,7 +28,7 @@ HTML, CSS, JS, and JSX technologies it demonstrates are:
 - <abbr title="application programming interface">API</abbr> calls and asynchronous functions
 - account registration and authorization
 
-The website can be accessed [here](https://derekschinke.github.io/react-around-auth/).
+The website can be accessed [here](https://main--boring-heyrovsky-8627f2.netlify.app/).
 
 ###### [Yandex.Practicum](https://practicum.yandex.com/) | [Яндекс.Практикум](https://praktikum.yandex.ru/)
 
