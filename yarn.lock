@@ -2172,7 +2172,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.30.3":
+"@testing-library/dom@npm:^7.28.1":
   version: 7.30.3
   resolution: "@testing-library/dom@npm:7.30.3"
   dependencies:
@@ -2188,9 +2188,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.11.10":
-  version: 5.11.10
-  resolution: "@testing-library/jest-dom@npm:5.11.10"
+"@testing-library/dom@npm:^7.30.4":
+  version: 7.30.4
+  resolution: "@testing-library/dom@npm:7.30.4"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^4.2.2
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.4
+    lz-string: ^1.4.4
+    pretty-format: ^26.6.2
+  checksum: 113225e873ec36739be2d0866b5108626253178c34727b51d6c04a046fea815450e40d0b1be63849dff46745043381e0b40fd03f8c1d5a447bc24ffde0f42ec9
+  languageName: node
+  linkType: hard
+
+"@testing-library/jest-dom@npm:^5.12.0":
+  version: 5.12.0
+  resolution: "@testing-library/jest-dom@npm:5.12.0"
   dependencies:
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
@@ -2200,7 +2216,7 @@ __metadata:
     css.escape: ^1.5.1
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: 25bf4cd9f6d49c87afe758ebc43ddcf9fb2a974bbf5f6e2979ed2056162ecc0547c396e4a47b6abf9bb646de4aedfb7b6da539cbae2c4a949d903ea396defaf3
+  checksum: 8bffa1c4113fbcdeb2aad1be48054ab46ee73da3b9b8a588e7e635e96f06ffe221689dfa494d2ac06520350ab7aa1fa2e2565aa30b02dd34c8d086072ba9ed57
   languageName: node
   linkType: hard
 
@@ -12436,8 +12452,8 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "react-around-auth@workspace:."
   dependencies:
-    "@testing-library/dom": ^7.30.3
-    "@testing-library/jest-dom": ^5.11.10
+    "@testing-library/dom": ^7.30.4
+    "@testing-library/jest-dom": ^5.12.0
     "@testing-library/react": ^11.2.6
     "@testing-library/user-event": ^13.1.5
     "@typescript-eslint/eslint-plugin": ^4.22.0

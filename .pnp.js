@@ -37,8 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@testing-library/dom", "npm:7.30.3"],
-            ["@testing-library/jest-dom", "npm:5.11.10"],
+            ["@testing-library/dom", "npm:7.30.4"],
+            ["@testing-library/jest-dom", "npm:5.12.0"],
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.6"],
             ["@testing-library/user-event", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:13.1.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.22.0"],
@@ -4753,13 +4753,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-format", "npm:26.6.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.30.4", {
+          "packageLocation": "./.yarn/cache/@testing-library-dom-npm-7.30.4-82ce32bd34-113225e873.zip/node_modules/@testing-library/dom/",
+          "packageDependencies": [
+            ["@testing-library/dom", "npm:7.30.4"],
+            ["@babel/code-frame", "npm:7.12.13"],
+            ["@babel/runtime", "npm:7.13.17"],
+            ["@types/aria-query", "npm:4.2.1"],
+            ["aria-query", "npm:4.2.2"],
+            ["chalk", "npm:4.1.1"],
+            ["dom-accessibility-api", "npm:0.5.4"],
+            ["lz-string", "npm:1.4.4"],
+            ["pretty-format", "npm:26.6.2"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@testing-library/jest-dom", [
-        ["npm:5.11.10", {
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.11.10-0c42cd523e-25bf4cd9f6.zip/node_modules/@testing-library/jest-dom/",
+        ["npm:5.12.0", {
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.12.0-5f1ff0df4e-8bffa1c411.zip/node_modules/@testing-library/jest-dom/",
           "packageDependencies": [
-            ["@testing-library/jest-dom", "npm:5.11.10"],
+            ["@testing-library/jest-dom", "npm:5.12.0"],
             ["@babel/runtime", "npm:7.13.17"],
             ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["aria-query", "npm:4.2.2"],
@@ -4813,7 +4828,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@testing-library/user-event", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:13.1.5"],
             ["@babel/runtime", "npm:7.13.17"],
-            ["@testing-library/dom", "npm:7.30.3"],
+            ["@testing-library/dom", "npm:7.30.4"],
             ["@types/testing-library__dom", null]
           ],
           "packagePeers": [
@@ -16729,8 +16744,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["react-around-auth", "workspace:."],
-            ["@testing-library/dom", "npm:7.30.3"],
-            ["@testing-library/jest-dom", "npm:5.11.10"],
+            ["@testing-library/dom", "npm:7.30.4"],
+            ["@testing-library/jest-dom", "npm:5.12.0"],
             ["@testing-library/react", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:11.2.6"],
             ["@testing-library/user-event", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:13.1.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:99d74bc85544bb2995c3cab9bb2eb8817f0ecae4bc99965b7baab0747a9c9c3912ac1df68affd52afaf256499a73e51eed05ed38cbf985c40686d3760d905c36#npm:4.22.0"],
