@@ -12,10 +12,8 @@
     "@typescript-eslint/parser": "^4.22.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
-    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.2.0",
     "eslint-config-react-app": "^6.0.0",
-    "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-flowtype": "^5.7.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.5",
@@ -58,7 +56,6 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "airbnb-base",
       "plugin:prettier/recommended"
     ],
     "rules": {
