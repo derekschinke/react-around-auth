@@ -5726,9 +5726,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.719":
-  version: 1.3.719
-  resolution: "electron-to-chromium@npm:1.3.719"
-  checksum: bde0bd8a91c98830454f3c6715e109c1d2e3eca5eff93aa5eaa26d8efd9d674b207f39a269130a48e7bcb2c66fc732d8b46182bbd6286d35e4c3c8bc404b68f0
+  version: 1.3.720
+  resolution: "electron-to-chromium@npm:1.3.720"
+  checksum: 51bb3720af1ffe2ac04e0760f4cdcf319c2e371625e7ed9e433ee962c1c7ae09e65b44afbe7ddf5c71dc9a01583c8e0015ff04b86f0222ed7cc5b5871494078d
   languageName: node
   linkType: hard
 
@@ -14510,19 +14510,16 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "table@npm:^6.0.4":
-  version: 6.3.2
-  resolution: "table@npm:6.3.2"
+  version: 6.3.3
+  resolution: "table@npm:6.3.3"
   dependencies:
     ajv: ^8.0.1
-    is-boolean-object: ^1.1.0
-    is-number-object: ^1.0.4
-    is-string: ^1.0.5
     lodash.clonedeep: ^4.5.0
     lodash.flatten: ^4.4.0
     lodash.truncate: ^4.4.2
     slice-ansi: ^4.0.0
     string-width: ^4.2.0
-  checksum: 8c016c3f92e87fe1f11623c73eb7bc7e1a4574415952942b9cb9722d2ed70c197a0abe21ef06b1b490f90af3abf9dc2378d8f5bb3624a38faee8640bada43bd1
+  checksum: 67d7c29c6225657bc678a32b51df05c42fe923c8b30b6b0141f08c36e0a36c90446b39a441569ff982f1f6a17ffba44c94baf7278e9de98d526d4b3d6ddd0644
   languageName: node
   linkType: hard
 

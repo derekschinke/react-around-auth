@@ -7042,7 +7042,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["browserslist", "npm:4.14.2"],
             ["caniuse-lite", "npm:1.0.30001214"],
-            ["electron-to-chromium", "npm:1.3.719"],
+            ["electron-to-chromium", "npm:1.3.720"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.71"]
           ],
@@ -7054,7 +7054,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["browserslist", "npm:4.16.5"],
             ["caniuse-lite", "npm:1.0.30001214"],
             ["colorette", "npm:1.2.2"],
-            ["electron-to-chromium", "npm:1.3.719"],
+            ["electron-to-chromium", "npm:1.3.720"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.71"]
           ],
@@ -9028,10 +9028,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["electron-to-chromium", [
-        ["npm:1.3.719", {
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.719-3bcd5ef8c2-bde0bd8a91.zip/node_modules/electron-to-chromium/",
+        ["npm:1.3.720", {
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.720-675079b260-51bb3720af.zip/node_modules/electron-to-chromium/",
           "packageDependencies": [
-            ["electron-to-chromium", "npm:1.3.719"]
+            ["electron-to-chromium", "npm:1.3.720"]
           ],
           "linkType": "HARD",
         }]
@@ -9383,7 +9383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.3.5"],
             ["strip-ansi", "npm:6.0.0"],
             ["strip-json-comments", "npm:3.1.1"],
-            ["table", "npm:6.3.2"],
+            ["table", "npm:6.3.3"],
             ["text-table", "npm:0.2.0"],
             ["v8-compile-cache", "npm:2.3.0"]
           ],
@@ -19053,14 +19053,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["table", [
-        ["npm:6.3.2", {
-          "packageLocation": "./.yarn/cache/table-npm-6.3.2-4f4c276a65-8c016c3f92.zip/node_modules/table/",
+        ["npm:6.3.3", {
+          "packageLocation": "./.yarn/cache/table-npm-6.3.3-cbaedf7787-67d7c29c62.zip/node_modules/table/",
           "packageDependencies": [
-            ["table", "npm:6.3.2"],
+            ["table", "npm:6.3.3"],
             ["ajv", "npm:8.1.0"],
-            ["is-boolean-object", "npm:1.1.0"],
-            ["is-number-object", "npm:1.0.4"],
-            ["is-string", "npm:1.0.5"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["lodash.flatten", "npm:4.4.0"],
             ["lodash.truncate", "npm:4.4.2"],
