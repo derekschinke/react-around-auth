@@ -4107,7 +4107,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.12.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.5, browserslist@npm:^4.6.2, browserslist@npm:^4.6.4":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.12.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.6, browserslist@npm:^4.6.2, browserslist@npm:^4.6.4":
   version: 4.16.6
   resolution: "browserslist@npm:4.16.6"
   dependencies:
@@ -4355,9 +4355,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001219":
-  version: 1.0.30001219
-  resolution: "caniuse-lite@npm:1.0.30001219"
-  checksum: 8748a9f63e3315a7f124fad43bd63a348c2211b53965224fb18927d46d8c6e0995499ee02fa9c42d5dce7ea0b6b9cc382adca70288060ee452f9aaab0334098a
+  version: 1.0.30001220
+  resolution: "caniuse-lite@npm:1.0.30001220"
+  checksum: 0c8b62c1c09861a8e670a2ea243f8ad6c711d3a32e7d569326bda6eab58051b5e559cc40c4fb96cceca2f89dec68eb14da0c3a3c933178db81a399b316c764dd
   languageName: node
   linkType: hard
 
@@ -4940,19 +4940,19 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.6.2, core-js-compat@npm:^3.9.0, core-js-compat@npm:^3.9.1":
-  version: 3.11.1
-  resolution: "core-js-compat@npm:3.11.1"
+  version: 3.11.2
+  resolution: "core-js-compat@npm:3.11.2"
   dependencies:
-    browserslist: ^4.16.5
+    browserslist: ^4.16.6
     semver: 7.0.0
-  checksum: 31941f0308e1048c82492d455d4036d2a4b590a28bb68e2eb83d4430d5e4845f79bac19ae2b49fe4e624d1de67e4163c0a0ebabe7b440db4f8327c09eac69122
+  checksum: 4895aef85f790eaf2548b7b365b80b463199c5e32b77e5d40fc8acd02a799e3a660062d72a7c5db26530ba90df31028a5bf36e337ca7a82c13c106b454bccbdd
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.0.0":
-  version: 3.11.1
-  resolution: "core-js-pure@npm:3.11.1"
-  checksum: 15fb6f41679fe7c209dbc0480e2419f66c4bf84af02214262a4f4568f09714fbc24da5508dadc9f6bd6d52c5a03469359f51672111d0f711ec48d062e11bede7
+  version: 3.11.2
+  resolution: "core-js-pure@npm:3.11.2"
+  checksum: c78576b44422422ad2a360a08b944f83b9b67ebf6768c6b1e57fb370e57ed08716ceb74661bab9c50d09ef64e4000aa4b4720533366945f29d5cd03360321f0e
   languageName: node
   linkType: hard
 
@@ -4964,9 +4964,9 @@ __metadata:
   linkType: hard
 
 "core-js@npm:^3.6.5":
-  version: 3.11.1
-  resolution: "core-js@npm:3.11.1"
-  checksum: 55418ccae95cdfa2ea13f7a848216ce92264302e4b2c06b90aba82b529b5a5f0791c1c03bc886ea70ef1c0312c6e29925b45d0a9b07491f7614b179c3c3fed89
+  version: 3.11.2
+  resolution: "core-js@npm:3.11.2"
+  checksum: fa7730643928cc284e934df203ad3807cb770fd63d7e23fd21e81ffcd60ce475b3943c41b5ebd49344199523c004310d5ed2e5c72b6057d23aa0854899a4682c
   languageName: node
   linkType: hard
 
@@ -6407,9 +6407,9 @@ __metadata:
   linkType: hard
 
 "eslint-visitor-keys@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "eslint-visitor-keys@npm:2.0.0"
-  checksum: e07e9863fb8c9b1453f5ad1a26f3cc8dd6b349b26605cc06bc0c61215ac5b6f13a4d08c875218e6c0f8ac8fc06ca6e090df769e32c569f0fd2e6a848b8a76c75
+  version: 2.1.0
+  resolution: "eslint-visitor-keys@npm:2.1.0"
+  checksum: e3081d7dd2611a35f0388bbdc2f5da60b3a3c5b8b6e928daffff7391146b434d691577aa95064c8b7faad0b8a680266bcda0a42439c18c717b80e6718d7e267d
   languageName: node
   linkType: hard
 
@@ -9787,8 +9787,8 @@ fsevents@^1.2.7:
   linkType: hard
 
 "listr2@npm:^3.2.2":
-  version: 3.8.1
-  resolution: "listr2@npm:3.8.1"
+  version: 3.8.2
+  resolution: "listr2@npm:3.8.2"
   dependencies:
     chalk: ^4.1.1
     cli-truncate: ^2.1.0
@@ -9801,7 +9801,7 @@ fsevents@^1.2.7:
     wrap-ansi: ^7.0.0
   peerDependencies:
     enquirer: ">= 2.3.0 < 3"
-  checksum: 93bf46f10c7da7f85217a658954466a4de4f9d448de6dc7f16c92047f987acfcdbda9e8e74d8bcd1c75a3a63037e139992181278a98122bd8143c04ad4e6c690
+  checksum: f0930780daf525015fb6e0568c69b36e23a1b5c74c00b802ed911e2d9b2eacc6fb9f498e90669b1a0f51c987fab5dfe7d95f5bbddddf5f3d9d42d99d373ea700
   languageName: node
   linkType: hard
 
