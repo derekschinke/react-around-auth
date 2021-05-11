@@ -12492,12 +12492,12 @@ fsevents@^1.2.7:
   linkType: hard
 
 "postcss-selector-parser@npm:^6.0.0, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.5":
-  version: 6.0.5
-  resolution: "postcss-selector-parser@npm:6.0.5"
+  version: 6.0.6
+  resolution: "postcss-selector-parser@npm:6.0.6"
   dependencies:
     cssesc: ^3.0.0
     util-deprecate: ^1.0.2
-  checksum: 51aedc1b84491065844d6db3b7e9a6a152a98af5fdd2c34697479c659b1504cb667454a4776567bb8f06978df38042d67e5f695054cca0c49e549e97ef54a43d
+  checksum: 3602758798048bffbd6a97d6f009b32a993d6fd2cc70775bb59593e803d7fa8738822ecffb2fafc745edf7fad297dad53c30d2cfe78446a7d3f4a4a258cb15b2
   languageName: node
   linkType: hard
 

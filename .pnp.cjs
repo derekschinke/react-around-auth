@@ -15980,7 +15980,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-attribute-case-insensitive", "npm:4.0.2"],
             ["postcss", "npm:7.0.35"],
-            ["postcss-selector-parser", "npm:6.0.5"]
+            ["postcss-selector-parser", "npm:6.0.6"]
           ],
           "linkType": "HARD",
         }]
@@ -16014,7 +16014,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-calc", "npm:7.0.5"],
             ["postcss", "npm:7.0.35"],
-            ["postcss-selector-parser", "npm:6.0.5"],
+            ["postcss-selector-parser", "npm:6.0.6"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "linkType": "HARD",
@@ -16477,7 +16477,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-modules-local-by-default", "npm:3.0.3"],
             ["icss-utils", "npm:4.1.1"],
             ["postcss", "npm:7.0.35"],
-            ["postcss-selector-parser", "npm:6.0.5"],
+            ["postcss-selector-parser", "npm:6.0.6"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "linkType": "HARD",
@@ -16489,7 +16489,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-modules-scope", "npm:2.2.0"],
             ["postcss", "npm:7.0.35"],
-            ["postcss-selector-parser", "npm:6.0.5"]
+            ["postcss-selector-parser", "npm:6.0.6"]
           ],
           "linkType": "HARD",
         }]
@@ -16864,10 +16864,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:6.0.5", {
-          "packageLocation": "./.yarn/cache/postcss-selector-parser-npm-6.0.5-69bcd37ac6-51aedc1b84.zip/node_modules/postcss-selector-parser/",
+        ["npm:6.0.6", {
+          "packageLocation": "./.yarn/cache/postcss-selector-parser-npm-6.0.6-4df491c1e3-3602758798.zip/node_modules/postcss-selector-parser/",
           "packageDependencies": [
-            ["postcss-selector-parser", "npm:6.0.5"],
+            ["postcss-selector-parser", "npm:6.0.6"],
             ["cssesc", "npm:3.0.0"],
             ["util-deprecate", "npm:1.0.2"]
           ],
@@ -19754,7 +19754,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-safe-parser", "npm:4.0.2"],
             ["postcss-sass", "npm:0.4.4"],
             ["postcss-scss", "npm:2.1.1"],
-            ["postcss-selector-parser", "npm:6.0.5"],
+            ["postcss-selector-parser", "npm:6.0.6"],
             ["postcss-syntax", "virtual:f63b76732e44d415a919e7f26a9e2b2b44fe8a481af5d19e631220d6572e9623c1e12756c1ab428f441f8ce442ed965e97fc2c12819b0e4af366983682722fdc#npm:0.36.2"],
             ["postcss-value-parser", "npm:4.1.0"],
             ["resolve-from", "npm:5.0.0"],
